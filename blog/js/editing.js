@@ -85,7 +85,7 @@ function load() {
         document.getElementById("content-heading").innerHTML = blogData[parseInt(seletedID)-1].title;
         document.getElementById("title").value = blogData[parseInt(seletedID)-1].title;
         document.getElementById("blog-date").value = blogData[parseInt(seletedID)-1].date;
-        inputContent(blogData[parseInt(seletedID)-1].content,'test');
+        inputContent(blogData[parseInt(seletedID)-1].content,'insert');
         inputDate(blogData[parseInt(seletedID)-1].date);
         document.getElementById("content-input").value = blogData[parseInt(seletedID)-1].content;
         break;
@@ -97,7 +97,7 @@ function load() {
         document.getElementById("content-heading").innerHTML = "New blog";
         document.getElementById("title").value = "";
         document.getElementById("blog-date").value = new Date().toString();
-        inputContent("New blog content",'test');
+        inputContent("New blog content",'insert');
         document.getElementById("content-input").value = "";
         break;
       }
