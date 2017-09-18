@@ -256,19 +256,28 @@ a#skip {
 	font-weight: bold;
 }
 
-ul li > ul {
+.notice-content ul li > ul {
 	list-style: none;
 	padding: 0;
 	margin: 0;
 }
 
-ul li > ul li {
+.notice-content ul li > ul li {
 	padding-left: 1em;
 	text-indent: -.7em;
 }
 
-ul li > ul li::before {
+.notice-content ul li > ul li::before {
 	content: "―　";
+}
+
+.notice-content ul li a,
+.notice-content ul li > ul li a {
+	color: inherit;
+	text-decoration: none;
+	background-image: url(../blog/img/underline.png);
+	background-position: bottom center;
+	background-repeat: repeat-x;
 }
 
 @media screen and (max-width: 1920px) and (min-width: 1280px) {
