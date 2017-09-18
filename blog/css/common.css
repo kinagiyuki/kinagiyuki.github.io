@@ -1,0 +1,258 @@
+@font-face {
+	font-family: moon;
+	src: url(../fonts/moon.ttf);
+}
+
+@font-face {
+	font-family: hanazome;
+	src: url(../fonts/hanazome.ttf);
+}
+
+@font-face {
+	font-family: kokuban;
+	src: url(../fonts/TanukiMagic.ttf);
+}
+
+@font-face {
+	font-family: kokubanEnglish;
+	src: url(../fonts/KGBrokenVesselsSketch.ttf);
+}
+
+body {
+	/*background: url('../img/bg.jpg') no-repeat center center fixed;*/
+	background: url("https://i.imgur.com/naM9rG0.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.bg-layer {
+	background-color: rgba(255, 255, 255, 0.5);
+	position: fixed;
+	top: 0; left: 0;
+	width: 100%; height: 100%;
+}
+
+.title {
+	position: relative;
+}
+
+.blog {
+	background-image: url(../img/blog_head.jpg), url(../img/blog_head.jpg), url(../img/blog_body.jpg);
+	background-position: center top, center bottom, center top;
+	background-repeat: no-repeat, no-repeat, repeat-y;
+}
+
+
+.blog-title {
+	background-image: url(../img/blog_head.jpg);
+	background-position: top center;
+	background-repeat: repeat-y;
+	padding: 2em 0;
+}
+
+.blog-title > .photo {
+	position: relative;
+	transform: rotate(-1deg);
+}
+
+.blog-title > .photo > .tape {
+	position: absolute;
+	top: 0; left: 50%;
+	transform: rotate(1deg) translate(-50%,-20%);
+}
+
+.blog-title > .photo > .photo-style {
+	width: 1020px;
+	height: 320px;
+}
+
+.photo-style {
+	padding: 10px;
+	background-color: rgba(255,255,255,0.8);
+}
+
+.title-content {
+	position: absolute;
+	top: 50%; left: 50%;
+	transform: translate(-50%,-50%);
+	font-family: kokuban;
+	font-size: 64px;
+	font-weight: bold;
+	color: rgba(255, 255, 255, 0.9);
+}
+
+.title-content small {
+	padding: 2px;
+	background-color: rgba(255, 255, 255, 0.9);
+	color: black;
+	font-size: 10px;
+	font-weight: normal;
+	font-family: kokubanEnglish;
+}
+
+.content {
+	background-image: url(../img/content_head.jpg), url(../img/content_head.jpg), url(../img/content_body.jpg);
+	background-position: center top, center bottom, center top;
+	background-repeat: no-repeat, no-repeat, repeat-y;
+	box-shadow: 10px 10px 10px grey;
+	margin-bottom: 0;
+}
+
+.content-heading {
+	display: block;
+	margin-bottom: 0;
+	padding-top: 1.6em;
+	text-align: center; 
+	font-family: moon;
+	font-weight: bold;
+	font-size: 2em;
+}
+
+.content-body {
+	margin: 0;
+	font-family: moon;
+	font-size: 24px;
+	padding: 0 1.2em;
+	line-height: 46px;
+}
+
+.content-body p{
+	padding: 0;
+	margin: 0;
+}
+
+.content-body p:first-child {
+	margin-top: 8px;
+}
+
+.content-body p.date {
+	font-style: italic;
+	text-align: right;
+	opacity: 0.8;
+}
+
+.content-body .photo {
+	position: relative;
+	margin: 24px 0;
+	transform: rotate(1deg);
+}
+
+.content-body .photo > .tape {
+	position: absolute;
+	top: 0; left: 50%;
+	transform: rotate(-1deg) translate(-50%,-50%);
+}
+
+.content-body .photo > .photo-style {
+	width: 620px;
+	height: 320px;
+}
+
+.content-body quote {
+	display: block;
+	padding: 0 1em;
+	margin: 0 2em;
+	transform: translate(0,-7px);
+	font-style: italic;
+	color: white;
+	background-color: rgba(255,100,100,0.8);
+	border-left: 10px solid rgba(255,200,200,0.8);
+	box-shadow: 3px 3px 3px grey;
+}
+
+.content-body quote small {
+	font-size: 18px;
+	display: block;
+	margin-left: 0.5em;
+}
+
+.content-body quote small::before {
+	content: "― ";
+}
+
+.content-body a {
+	text-decoration: none;
+	background-image: url(../img/underline.png);
+	background-position: bottom center;
+	background-repeat: repeat-x;
+	color: inherit;
+	padding-bottom: 5px;
+	border-radius: 5px;
+}
+
+.content-end {
+	height: 60px;
+	width: 100%;
+	color: transparent;
+	visibility: visible;
+}
+
+.menu-col-base {
+	position: relative;
+}
+
+.memo {
+	background-image: url(../img/navigation.png);
+	background-repeat: no-repeat;
+	height: 371px;
+	font-family: hanazome;
+	font-size: 16px;
+	color: lightyellow;
+
+	padding-top: 2em;
+	padding-left: 1em; 
+	padding-right: 0.8em; 
+}
+
+.menu-col {
+	position: fixed;
+	top: 1%; right: 23%;
+}
+
+.blog-memo {
+	background-image: url(../img/navigation.png);
+	background-repeat: no-repeat;
+	height: 371px;
+	font-family: hanazome;
+	font-size: 16px;
+	color: lightyellow;
+
+	margin-top: 2em;
+	padding-top: 2em;
+	padding-left: 1em; 
+	padding-right: 0.8em; 
+}
+
+.memo a,
+.blog-memo a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.memo a:hover,
+.blog-memo a:hover {
+	color: rgb(220,220,184);
+	text-decoration: none;
+}
+
+.nav-label {
+	background-image: url(../img/nav_label.png);
+	background-repeat: no-repeat;
+	position: relative;
+	width: 360px; height: 114px;
+	font-family: hanazome;
+	font-size: 36px;
+	
+	margin-top: 1em;
+	padding: 0.5em 1em;
+}
+
+.nav-label > a {
+	color: inherit;
+	position: absolute;
+	top: 40%; left: 40%;
+	transform: translate(-50%,-50%);
+	text-decoration: none;
+}

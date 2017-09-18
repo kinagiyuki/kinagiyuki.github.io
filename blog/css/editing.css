@@ -1,0 +1,32 @@
+.edit-button {
+	position: fixed;
+	color: white;
+	font-size: 48px;
+	padding: 5px 10px 3px 15px;
+	background-color: powderblue;
+	bottom: 5%; right: 5%;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.edit-area {
+	position: fixed;
+	background-color: rgba(255,255,255,0.8);
+	width: 600px; height: 1080px;
+	bottom: 5%; right: 5%;
+	padding: 1em;
+	opacity: 0;
+	overflow: hidden;
+	transition: opacity 0.5s;
+	color: black;
+	font-size: 18px;
+	font-family: kokubanEnglish;
+}
+
+.edit-button:hover .edit-area {
+	opacity: 1;
+}
+
+.edit-area textarea {
+	height: auto;
+}

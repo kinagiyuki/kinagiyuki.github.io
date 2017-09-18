@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kinagiyuki's Note</title>
+
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Font -->
+	<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/bebusneuebold" type="text/css"/>
+
+	<!-- Customized style sheet -->
+	<link href="css/homepage.css" rel="stylesheet">
+
+	<!-- Favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+	<link rel="manifest" href="img/favicons/manifest.json">
+	<link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#ffffff">
+</head>
+<body>
+	<a href="" id="skip" class="disable">
+		Loading<span class="glyphicon glyphicon-refresh" aria-hidden="true" style="padding-left: 10px;"></span>
+	</a>
+	<div id="version"><span>Beta v0.3</span></div>
+
+	<div id="wrapper">
+		<div id="title">
+			<figure>
+				<img src="img/homepage/title.png">
+			</figure>
+		</div>
+	</div>
+
+	<div class="content">
+		<div id="student-card">
+			<img src="img/homepage/student_card.png">
+			<a href="javascript:open('self-intro');"><img src="img/homepage/icon_v1.jpg" class="profile-pic" height="200"></a>
+			<div class="interest">
+				<div class="interest-tag">C++</div>
+				<div class="interest-tag">Python</div>
+				<div class="interest-tag">AI</div>
+				<div class="interest-tag">Photoshop</div>
+				<div class="interest-tag">Head-Fi</div>
+			</div>
+		</div>
+		<div id="notebook">
+			<img src="img/homepage/note.jpg">
+			<div class="menu">	
+				<ul>
+					<li><a href="blog/index.html">Blog</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div id="sakura">
+		<div id="sakuraPetal">
+			<img class="petal" id="petal1"  src="img/homepage/petal1.png">
+			<img class="petal" id="petal2"  src="img/homepage/petal2.png">
+			<img class="petal" id="petal3"  src="img/homepage/petal3.png">
+			<img class="petal" id="petal4"  src="img/homepage/petal1.png">
+			<img class="petal" id="petal5"  src="img/homepage/petal2.png">
+			<img class="petal" id="petal6"  src="img/homepage/petal3.png">
+			<img class="petal" id="petal7"  src="img/homepage/petal1.png">
+			<img class="petal" id="petal8"  src="img/homepage/petal2.png">
+			<img class="petal" id="petal9"  src="img/homepage/petal3.png">
+		</div>
+	</div>
+
+	<!-- Self introduction wrapper -->
+	<div id="self-intro">
+		<div class="row">
+			<div class="col-xs-3">
+				<img src="img/homepage/icon_v1.jpg" class="img-responsive center-block" height="200">
+			</div>
+			<div class="col-xs-offset-1 col-xs-8">
+				<h3>樹ナギ雪<span class="label label-warning">實習中……</span></h3>
+				<blockquote>
+					<p style="font-style: italic;"">普通星に生まれた普通星人です。</p>
+				</blockquote>
+				<hr>
+				<div class="intro-content">
+					<p>
+						弄這個網站純粹是個人興趣，不如期待完整性吶。不過還是應該會有很多有趣的東西這在裡，也不至於令你失望。ｗ
+					</p>
+					<p>
+						
+					</p>
+				</div>
+			</div>
+		</div>
+		<a class="close" href="javascript:close('self-intro');"><div class="glyphicon glyphicon-remove"></div></a>
+	</div>
+	<!-- End of Self introduction -->
+	
+	<!-- Notice -->
+	<div class="notice" id="notice">
+		<!--img src="img/homepage/825215.png" class="img-responsive"-->
+		<img src="https://i.imgur.com/WT0a6vs.png" class="img-responsive">
+		<div class="notice-content">
+			<h1>Notice:</h1>
+			<ul>
+				<li>Beta v0.3
+					<ul>
+						<li>Hello World!</li>
+						<li>Blog page is opened.</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- End of notice -->
+</body>
+<footer>
+	<!-- jQuery Core JS -->
+	<script src="js/jquery.js"></script>
+
+	<!-- Bootstrap Core JS -->
+	<script src="js/bootstrap.min.js"></script>
+
+	<!-- Web Animation JS API -->
+	<script src="js/web-animations.min.js"></script>
+
+	<!-- Customized JS -->
+	<script src="js/homepage.js"></script>
+</footer>
+</html>
