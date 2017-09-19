@@ -196,6 +196,6 @@ firebase.auth().onAuthStateChanged(function(user) {
   }
 });
 
-window.onload = function() {
+/*window.onload = function() {
   document.getElementById("edit-form").style.display = "none";
-}
+}*/

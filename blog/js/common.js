@@ -7,12 +7,39 @@ function inputDate(x) {
 function inputContent(x,mode) {
   var inputArray = x.split(/\r\n|\r|\n/g);
   var content = "";
+  var isQuote = false;
   for(var i=0;i<inputArray.length;i++)
   {
-    if(inputArray[i].indexOf("//")==0 && inputArray[i].lastIndexOf("//")==(inputArray[i].length-2))
-      content += "<quote>" + inputArray[i].substring(2).replace("//","") + "</quote>\n";
-    else
-      content += "<p>" + inputArray[i] + "</p>\n";
+    if(isQuote)
+    {
+      if(inputArray[i].lastIndexOf("//")==(inputArray[i].length-2))
+      {
+        if(inputArray[i].indexOf("[by]")>=0)
+          content += "<br>\n" + inputArray[i].substring(0,inputArray[i].indexOf("[by]")) + "<small>"+ inputArray[i].substring(inputArray[i].indexOf("[by]")+4).replace("//","") + "</small></quote>\n";
+        else
+          content += "<br>\n" + inputArray[i].replace("//","") + "</quote>\n";
+        isQuote = false;
+      }
+      else
+        content += "<br>\n" + inputArray[i];
+    }
+    else //Not Quote
+    {
+      if(inputArray[i].indexOf("//")==0 && inputArray[i].lastIndexOf("//")==(inputArray[i].length-2))
+      {
+        if(inputArray[i].indexOf("[by]")>=0)
+          content += "<quote>" + inputArray[i].substring(2,inputArray[i].indexOf("[by]")) + "<small>"+ inputArray[i].substring(inputArray[i].indexOf("[by]")+4).replace("//","") + "</small></quote>\n";
+        else
+          content += "<quote>" + inputArray[i].substring(2).replace("//","") + "</quote>\n";
+      }
+      else if(inputArray[i].indexOf("//")==0)
+      {
+        isQuote = true;
+        content += "<quote>" + inputArray[i].substring(2);
+      }
+      else
+        content += "<p>" + inputArray[i] + "</p>\n";
+    }
   }
   console.clear();
   console.log(content);

@@ -99,7 +99,7 @@
                     </div>
                     <input type="button" name="login" id="login" value="Login" onclick="logIn();" class="btn btn-default">
                 </form>
-                <form id="edit-form">
+                <form id="edit-form" style="display: none;">
                     <div class="form-group">
                         <label for="data-select">Load</label>
                         <select class="form-control" id="data-select">
@@ -107,6 +107,11 @@
                         </select>
                     </div>
                     <input type="button" name="data-load" id="data-load" value="Load" onclick="load();" class="btn btn-default">
+                    <div class="form-group">
+                        <label for="Head-image">Head Image</label>
+                        <select class="form-control" id="head-image-select"></select>
+                    </div>
+                    <input type="button" name="head-image-load" id="head-image-load" value="Use" onclick="loadHeadImage();" class="btn btn-default">
                     <div class="form-group">
                         <label for="title">Title</label>
                         <input type="text" name="title" id="title" onkeyup="inputTitle(this);" class="form-control">
