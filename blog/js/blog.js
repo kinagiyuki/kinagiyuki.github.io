@@ -8,6 +8,10 @@ function loadAndInsertBlogData(BID)
 		if(snapshot.val()!=null)
 		{
 			document.getElementById("content-heading").innerHTML = snapshot.val().title;
+			if(snapshot.val().headImage==null)
+	          document.getElementById("head-image").src = defaultHeadImage;
+	        else
+	          document.getElementById("head-image").src = snapshot.val().headImage;
 			inputContent(snapshot.val().content,'insert');
 			inputDate(snapshot.val().date);
 		}

@@ -1,3 +1,6 @@
+//Common global variable define
+var defaultHeadImage = "https://i.imgur.com/Sr26svx.jpg";
+
 //======================Function declaration and definition==================
 function inputDate(x) {
   var target = document.getElementById("content-body");

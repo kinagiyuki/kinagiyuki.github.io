@@ -7,6 +7,10 @@ function inputTitle(x) {
 	title.innerHTML = inputText;
 }
 
+function inputHeadImage(x) {
+  document.getElementById("head-image").src = x;
+}
+
 //Copy to clipboard function
 function copyTextToClipboard(text) {
   var textArea = document.createElement("textarea");
@@ -82,6 +86,10 @@ function load() {
       {
         console.log("Not new");
         seletedID = blogLoad[i].value;
+        if(blogData[parseInt(seletedID)-1].headImage==null)
+          document.getElementById("head-image").src = defaultHeadImage;
+        else
+          document.getElementById("head-image").src = blogData[parseInt(seletedID)-1].headImage;
         document.getElementById("content-heading").innerHTML = blogData[parseInt(seletedID)-1].title;
         document.getElementById("title").value = blogData[parseInt(seletedID)-1].title;
         document.getElementById("blog-date").value = blogData[parseInt(seletedID)-1].date;
@@ -94,6 +102,7 @@ function load() {
       {
         console.log("New");
         seletedID = "";
+        document.getElementById("head-image").src = defaultHeadImage;
         document.getElementById("content-heading").innerHTML = "New blog";
         document.getElementById("title").value = "";
         document.getElementById("blog-date").value = new Date().toString();
@@ -105,6 +114,7 @@ function load() {
 
 function save() {
   var isNew = false;
+  var inputHeadImage = document.getElementById("head-image-input");
   var inputTitle = document.getElementById("title").value;
   var inputDate = document.getElementById("blog-date").value;
   var intputContent = document.getElementById("content-input").value;
@@ -122,6 +132,7 @@ function save() {
     console.log("Old Blog");
     var saveBlog = {
       title: inputTitle,
+      headImage: inputHeadImage,
       date: inputDate,
       content: intputContent 
     };

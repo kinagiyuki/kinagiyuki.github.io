@@ -64,8 +64,8 @@ body {
 }
 
 .blog-title > .photo > .photo-style {
-	width: 1020px;
-	height: 320px;
+	max-width: 1020px;
+	max-height: 320px;
 }
 
 .photo-style {
@@ -146,8 +146,8 @@ body {
 }
 
 .content-body .photo > .photo-style {
-	width: 620px;
-	height: 320px;
+	max-width: 620px;
+	max-height: 320px;
 }
 
 .content-body quote {

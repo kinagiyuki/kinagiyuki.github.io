@@ -47,8 +47,9 @@
             <div class="col-sm-12 blog-title">
                 <div class="photo">
                     <img src="img/tape01.jpg" class="tape">
-                    <img src="https://i.imgur.com/Sr26svx.jpg" class="img-responsive center-block photo-style">
-                    <span class="title-content">編集<small>beta0.1</small></span>
+                    <!-- 1020 x 320 -->
+                    <img src="https://i.imgur.com/Sr26svx.jpg" class="img-responsive center-block photo-style" id="head-image">
+                    <span class="title-content">編集 (1020 x 320)<small>beta0.1</small></span>
                 </div>
             </div>
         </div>
@@ -109,7 +110,8 @@
                     <input type="button" name="data-load" id="data-load" value="Load" onclick="load();" class="btn btn-default">
                     <div class="form-group">
                         <label for="Head-image">Head Image</label>
-                        <select class="form-control" id="head-image-select"></select>
+                        <!--select class="form-control" id="head-image-select"></select-->
+                        <input type="text" name="head-image-input" id="head-image-input" onkeyup="inputHeadImage(this.value);" class="form-control">
                     </div>
                     <input type="button" name="head-image-load" id="head-image-load" value="Use" onclick="loadHeadImage();" class="btn btn-default">
                     <div class="form-group">
