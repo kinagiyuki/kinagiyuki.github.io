@@ -114,7 +114,7 @@ function load() {
 
 function save() {
   var isNew = false;
-  var inputHeadImage = document.getElementById("head-image-input");
+  var inputHeadImage = document.getElementById("head-image-input").value;
   var inputTitle = document.getElementById("title").value;
   var inputDate = document.getElementById("blog-date").value;
   var intputContent = document.getElementById("content-input").value;
