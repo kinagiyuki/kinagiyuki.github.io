@@ -8,7 +8,10 @@ function inputTitle(x) {
 }
 
 function inputHeadImage(x) {
-  document.getElementById("head-image").src = x;
+  if(x!="")
+    document.getElementById("head-image").src = x;
+  else
+    document.getElementById("head-image").src = defaultHeadImage;
 }
 
 //Copy to clipboard function
@@ -89,7 +92,10 @@ function load() {
         if(blogData[parseInt(seletedID)-1].headImage==null)
           document.getElementById("head-image").src = defaultHeadImage;
         else
+        {
           document.getElementById("head-image").src = blogData[parseInt(seletedID)-1].headImage;
+          document.getElementById("head-image-input").value = blogData[parseInt(seletedID)-1].headImage;
+        }
         document.getElementById("content-heading").innerHTML = blogData[parseInt(seletedID)-1].title;
         document.getElementById("title").value = blogData[parseInt(seletedID)-1].title;
         document.getElementById("blog-date").value = blogData[parseInt(seletedID)-1].date;
@@ -118,13 +124,16 @@ function save() {
   var inputTitle = document.getElementById("title").value;
   var inputDate = document.getElementById("blog-date").value;
   var intputContent = document.getElementById("content-input").value;
+  var isPublic = (document.getElementById("public").checked)?"Yes":"No";
   if(seletedID == "" || seletedID > blogData.length)  //New blog content
   {
       console.log("New Blog");
       firebase.database().ref('blogs/zh/' + (blogData.length+1) ).set({
       title: inputTitle,
+      headImage:　"",
       date: inputDate,
-      content: intputContent
+      content: intputContent,
+      public: isPublic
     });
   }
   else
@@ -134,7 +143,8 @@ function save() {
       title: inputTitle,
       headImage: inputHeadImage,
       date: inputDate,
-      content: intputContent 
+      content: intputContent,
+      public: isPublic
     };
     var update = {};
     update["blogs/zh/"+seletedID] = saveBlog;
@@ -194,17 +204,18 @@ initalizeFirebase();
 
 firebase.auth().onAuthStateChanged(function(user) {
   if(user)
-  {
-    blogData = new Array();
-    firebase.database().ref('blogs/zh/').once('value').then(function(snapshot) {
-      var i=1;
-      console.log(snapshot.val());
-      while(snapshot.val()[i]!=null)
-        blogData.push(snapshot.val()[i++]);
-      clearSelection();
-      insertBlogData();
-    });
-  }
+    if(blogData[0]==null)
+    {
+      blogData = new Array();
+      firebase.database().ref('blogs/zh/').once('value').then(function(snapshot) {
+        var i=1;
+        console.log(snapshot.val());
+        while(snapshot.val()[i]!=null)
+          blogData.push(snapshot.val()[i++]);
+        clearSelection();
+        insertBlogData();
+      });
+    }
 });
 
 /*window.onload = function() {

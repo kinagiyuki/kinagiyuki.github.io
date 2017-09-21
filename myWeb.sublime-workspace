@@ -325,7 +325,7 @@
 			"file": "blog/js/common.js",
 			"settings":
 			{
-				"buffer_size": 2722,
+				"buffer_size": 2813,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -343,7 +343,16 @@
 			"file": "blog/js/editing.js",
 			"settings":
 			{
-				"buffer_size": 6417,
+				"buffer_size": 6512,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "blog/js/blog.js",
+			"settings":
+			{
+				"buffer_size": 1343,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -352,7 +361,7 @@
 			"file": "blog/css/common.css",
 			"settings":
 			{
-				"buffer_size": 4674,
+				"buffer_size": 4682,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -388,8 +397,15 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
+	"expanded_folders":
+	[
+		"/D/GitHub/kinagiyuki.github.io",
+		"/D/GitHub/kinagiyuki.github.io/blog",
+		"/D/GitHub/kinagiyuki.github.io/blog/js"
+	],
 	"file_history":
 	[
+		"/D/GitHub/kinagiyuki.github.io/blog/blog.html",
 		"/D/GitHub/myWeb/app/blog/blog.html",
 		"/D/GitHub/kinagiyuki.github.io/blog/blog_example.html",
 		"/D/GitHub/kinagiyuki.github.io/blog/css/editing.css",
@@ -507,7 +523,7 @@
 						"translation.y": 135.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
@@ -536,7 +552,7 @@
 						"translation.y": 3555.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
@@ -545,15 +561,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2722,
+						"buffer_size": 2813,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1640,
-								1640
+								89,
+								89
 							]
 						],
 						"settings":
@@ -593,7 +609,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1170.0,
+						"translation.y": 240.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 4,
@@ -605,15 +621,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6417,
+						"buffer_size": 6512,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4245,
-								4245
+								3760,
+								3760
 							]
 						],
 						"settings":
@@ -623,27 +639,56 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1350.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
 					"buffer": 5,
-					"file": "blog/css/common.css",
+					"file": "blog/js/blog.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4674,
+						"buffer_size": 1343,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1381,
-								1381
+								551,
+								561
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "blog/css/common.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4682,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2846,
+								2846
 							]
 						],
 						"settings":
@@ -652,10 +697,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 675.0,
+						"translation.y": 1755.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]

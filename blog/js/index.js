@@ -22,7 +22,11 @@ function loadAndInsertBlogData()
 	var i=1;
 	//blogData = new Array();
 	while(snapshot.val()[i]!=null)
-		blogData.push(snapshot.val()[i++]);
+	{
+		if(snapshot.val()[i].public=="Yes")
+			blogData.push(snapshot.val()[i]);
+		i++;
+	}
 
 	//Insert into page
 	insertBlogData();

@@ -120,11 +120,14 @@
                     </div>
                     <div class="form-group">
                         <label for="Date">Date</label>
-                        <input type="date" name="blog-date" id="blog-date" class="form-control" onchange="inputData(this.value);">
+                        <input type="date" name="blog-date" id="blog-date" class="form-control" onchange="inputDate(this.value);">
                     </div>
                     <div class="form-group">
                         <label for="content">Content</label>
                         <textarea class="form-control" id="content-input" rows="10" onkeyup="inputContent(this.value,'insert');"></textarea>
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox" id="public"> Public</label>
                     </div>
                     <input type="button" name="output" id="output" value="Done!" onclick="inputContent(document.getElementById('content-input').value,'tape-out');" class="btn btn-default">
                     <input type="button" name="data-save" id="data-save" value="Save" onclick="save();" class="btn btn-default">
