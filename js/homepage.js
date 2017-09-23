@@ -139,8 +139,8 @@ window.onload = function() {
 
 //======================Homepage function===================
 function open(input) {
+	document.getElementById(input).style.display = "block";
 	document.getElementById(input).style.visibility = "visible";
-	document.getElementById(input).style.display = "block"
 }
 
 function close(input) {

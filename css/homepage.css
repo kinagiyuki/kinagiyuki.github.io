@@ -38,6 +38,12 @@ a#skip {
 	z-index: 2;
 }
 
+hr {
+	border-color: rgb(200,200,200);
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
 #version {
 	position: absolute;
 	bottom: 5%; right: 5%;
@@ -122,7 +128,8 @@ a#skip {
 	font-size: 18px;
 }
 
-.interest-tag {
+.interest-tag,
+.red-tag {
 	display: inline-block;
 	background: rgba(255,170,150,0.9);
 	background: -webkit-linear-gradient(left,rgba(255,170,150,0.9),rgba(250,100,90,0.8)); /*Safari 5.1-6*/
@@ -134,6 +141,7 @@ a#skip {
 	margin: 3px auto;
 	border-radius: 5px;
 	overflow: hidden;
+	cursor: default;
 }
 
 #notebook {
@@ -193,7 +201,8 @@ a#skip {
 	transform: translate(-50%,-50%);
 	width: 1000px; height: 600px;
 	padding: 3em;
-	background-color: rgba(255,255,255,0.8);
+	background-color: rgba(255,255,255,0.9);
+	border-radius: 5px;
 	box-shadow: 5px 5px 5px grey;
 	font-family: notoSansCJKtc;
 	overflow: hidden;
@@ -231,6 +240,27 @@ a#skip {
 #self-intro .close {
 	position: absolute;
 	top: 5%; right: 5%;
+}
+
+.show-label {
+	padding: 0.5em;
+	font-size: 36px;
+	text-align: center;
+}
+
+.fa-intro {
+	color: rgb(250,100,90);
+}
+
+.good-at {
+	padding: 0.5em;
+	font-size: 24px;
+	text-align: center;
+}
+
+.show-label a:hover .fa-intro,
+.show-label a:active .fa-intro {
+	color: rgb(230,80,70);
 }
 
 .notice {
