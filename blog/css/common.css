@@ -1,7 +1,21 @@
 @font-face {
-	font-family: moon;
-	/*src: url(../fonts/moon.ttf);*/
+	font-family: bamboo;
 	src: url(../fonts/bamboo.ttc);
+}
+
+@font-face {
+	font-family: wind;
+	src: url(../fonts/wind.ttc);
+}
+
+@font-face {
+	font-family: seto;
+	src: url(../fonts/setofont.ttf);
+}
+
+@font-face {
+	font-family: notoSansCJKtc;
+	src: url(../../fonts/homepage/NotoSansCJKtc-Regular.otf);
 }
 
 @font-face {
@@ -106,14 +120,14 @@ body {
 	margin-bottom: 0;
 	padding-top: 1.6em;
 	text-align: center; 
-	font-family: moon;
+	font-family: bamboo, wind, seto, notoSansCJKtc;
 	font-weight: bold;
 	font-size: 2em;
 }
 
 .content-body {
 	margin: 0;
-	font-family: moon;
+	font-family: bamboo, wind, seto, notoSansCJKtc;
 	font-size: 24px;
 	padding: 0 1.2em;
 	line-height: 46px;
@@ -186,7 +200,7 @@ body {
 
 .content-end {
 	margin-top: 10px;
-	font-family: moon;
+	font-family: bamboo, wind, seto, notoSansCJKtc;
 	height: 70px;
 	width: auto;
 	font-size: 16px;
