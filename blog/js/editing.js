@@ -82,40 +82,40 @@ function clearSelection() {
 
 function load() {
   console.log("Loading...");
-  var blogLoad = document.getElementById("data-select");
-  for(var i=0;i<blogLoad.length;i++)
-    if(blogLoad[i].selected == true)
-      if(blogLoad[i].value!="")
-      {
-        console.log("Not new");
-        seletedID = blogLoad[i].value;
-        if(blogData[parseInt(seletedID)-1].headImage==null)
-          document.getElementById("head-image").src = defaultHeadImage;
-        else
-        {
-          document.getElementById("head-image").src = blogData[parseInt(seletedID)-1].headImage;
-          document.getElementById("head-image-input").value = blogData[parseInt(seletedID)-1].headImage;
-        }
-        document.getElementById("content-heading").innerHTML = blogData[parseInt(seletedID)-1].title;
-        document.getElementById("title").value = blogData[parseInt(seletedID)-1].title;
-        document.getElementById("blog-date").value = blogData[parseInt(seletedID)-1].date;
-        inputContent(blogData[parseInt(seletedID)-1].content,'insert');
-        inputDate(blogData[parseInt(seletedID)-1].date);
-        document.getElementById("content-input").value = blogData[parseInt(seletedID)-1].content;
-        break;
-      }
-      else
-      {
-        console.log("New");
-        seletedID = "";
-        document.getElementById("head-image").src = defaultHeadImage;
-        document.getElementById("content-heading").innerHTML = "New blog";
-        document.getElementById("title").value = "";
-        document.getElementById("blog-date").value = new Date().toString();
-        inputContent("New blog content",'insert');
-        document.getElementById("content-input").value = "";
-        break;
-      }
+  var index = document.getElementById("data-select").selectedIndex;
+  var blogLoad = document.getElementById("data-select")[index];
+  if(blogLoad.value!="")
+  {
+    console.log("Not new");
+    seletedID = blogLoad.value;
+    var loadIndex = parseInt(seletedID)-1;
+    if(blogData[loadIndex].headImage==null)
+      document.getElementById("head-image").src = defaultHeadImage;
+    else
+    {
+      document.getElementById("head-image").src = blogData[loadIndex].headImage;
+      document.getElementById("head-image-input").value = blogData[loadIndex].headImage;
+    }
+    document.getElementById("content-heading").innerHTML = blogData[loadIndex].title;
+    document.getElementById("title").value = blogData[loadIndex].title;
+    document.getElementById("blog-date").value = blogData[loadIndex].date;
+    inputContent(blogData[loadIndex].content,'insert');
+    inputDate(blogData[loadIndex].date);
+    document.getElementById("content-input").value = blogData[loadIndex].content;
+    document.getElementById("public").checked = (blogData[loadIndex].public=="Yes")?true:false;
+  }
+  else
+  {
+    console.log("New");
+    seletedID = "";
+    document.getElementById("head-image").src = defaultHeadImage;
+    document.getElementById("content-heading").innerHTML = "New blog";
+    document.getElementById("title").value = "";
+    document.getElementById("blog-date").value = new Date().toString();
+    inputContent("New blog content",'insert');
+    document.getElementById("content-input").value = "";
+    document.getElementById("public").checked = false;
+  }
 }
 
 function save() {

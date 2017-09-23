@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"de",
+				"defaultHeadImage"
+			],
+			[
+				"blo",
+				"blogData"
+			],
+			[
 				"tex",
 				"text-decoration"
 			],
@@ -26,10 +34,6 @@
 			[
 				"input",
 				"inputDate"
-			],
-			[
-				"blo",
-				"blog-date"
 			],
 			[
 				"text",
@@ -334,7 +338,7 @@
 			"file": "blog/editing.html",
 			"settings":
 			{
-				"buffer_size": 6877,
+				"buffer_size": 7029,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -343,7 +347,7 @@
 			"file": "blog/js/editing.js",
 			"settings":
 			{
-				"buffer_size": 6512,
+				"buffer_size": 6913,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -405,6 +409,7 @@
 	],
 	"file_history":
 	[
+		"/D/GitHub/kinagiyuki.github.io/blog/js/index.js",
 		"/D/GitHub/kinagiyuki.github.io/blog/blog.html",
 		"/D/GitHub/myWeb/app/blog/blog.html",
 		"/D/GitHub/kinagiyuki.github.io/blog/blog_example.html",
@@ -494,7 +499,7 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 4,
 			"sheets":
 			[
 				{
@@ -591,15 +596,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6877,
+						"buffer_size": 7029,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4642,
-								4658
+								5357,
+								5357
 							]
 						],
 						"settings":
@@ -609,10 +614,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 240.0,
+						"translation.y": 1515.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
@@ -621,15 +626,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6512,
+						"buffer_size": 6913,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3760,
-								3760
+								2836,
+								2836
 							]
 						],
 						"settings":
@@ -639,10 +644,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1350.0,
+						"translation.y": 990.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
@@ -668,10 +673,10 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 9.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -700,7 +705,7 @@
 						"translation.y": 1755.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 4,
 					"type": "text"
 				}
 			]

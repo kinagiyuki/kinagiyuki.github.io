@@ -39,9 +39,9 @@ body {
 }
 
 .blog {
-	background-image: url(../img/blog_head.jpg), url(../img/blog_head.jpg), url(../img/blog_body.jpg);
+	background-image: url(../img/blog_head1.jpg), url(../img/blog_tail.jpg), url(../img/blog_body.jpg);
 	background-position: center top, center bottom, center top;
-	background-repeat: no-repeat, no-repeat, repeat-y;
+	background-repeat: repeat-x, repeat-x, repeat-y;
 }
 
 
@@ -116,6 +116,7 @@ body {
 	font-size: 24px;
 	padding: 0 1.2em;
 	line-height: 46px;
+	min-height: 500px;
 }
 
 .content-body p{
@@ -183,10 +184,20 @@ body {
 }
 
 .content-end {
-	height: 60px;
-	width: 100%;
-	color: transparent;
-	visibility: visible;
+	margin-top: 10px;
+	font-family: moon;
+	height: 70px;
+	width: auto;
+	font-size: 16px;
+	line-height: 16px;
+}
+
+.content-end p {
+	margin: 0;
+}
+
+.content-end p+p {
+	margin-top: 5px;
 }
 
 .menu-col-base {
