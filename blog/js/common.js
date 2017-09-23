@@ -44,8 +44,8 @@ function inputContent(x,mode) {
         content += "<p>" + inputArray[i] + "</p>\n";
     }
   }
-  console.clear();
-  console.log(content);
+  //console.clear();
+  //console.log(content);
   if(mode=='insert')
   {
     var target = document.getElementById("content-body");
@@ -75,7 +75,7 @@ function initalizeFirebase() {
 
 $(window).scroll(function() {
 	var width = window.innerWidth || document.body.clientWidth;
-	width = (width-1070)/2 - 49;
+	width = (width-1070)/2 - 44;
 
 	if($(this).scrollTop() > 500)
 	{
