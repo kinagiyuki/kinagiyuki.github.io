@@ -1,6 +1,8 @@
-var blogData = new Array();
+//=====================Variables definition=====================
 var seletedID = "";
 
+
+//=====================Functions definition=====================
 function inputTitle(x) {
 	var inputText = x.value;
 	var title = document.getElementById("content-heading");

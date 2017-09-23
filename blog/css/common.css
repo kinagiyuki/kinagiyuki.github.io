@@ -1,6 +1,7 @@
 @font-face {
 	font-family: moon;
-	src: url(../fonts/moon.ttf);
+	/*src: url(../fonts/moon.ttf);*/
+	src: url(../fonts/bamboo.ttc);
 }
 
 @font-face {
@@ -46,9 +47,9 @@ body {
 
 
 .blog-title {
-	background-image: url(../img/blog_head.jpg);
+	background-image: url(../img/blog_head1.jpg);
 	background-position: top center;
-	background-repeat: repeat-y;
+	background-repeat: repeat;
 	padding: 2em 0;
 }
 

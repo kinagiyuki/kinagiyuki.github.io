@@ -1,5 +1,6 @@
 //Common global variable define
 var defaultHeadImage = "https://i.imgur.com/Sr26svx.jpg";
+var blogData = new Array();
 
 //======================Function declaration and definition==================
 function inputDate(x) {
@@ -57,6 +58,18 @@ function inputContent(x,mode) {
   }
 }
 
+function getParameterByName(name) 
+{
+  var url = window.location.href;
+  name = name.replace(/[\[\]]/g, "\\$&");
+  var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+    results = regex.exec(url);
+  if (!results) return null;
+  if (!results[2]) return '';
+  return decodeURIComponent(results[2].replace(/\+/g, " "));
+}
+
+//==================== Firebase related ==============================
 function initalizeFirebase() {
   if (firebase.apps.length === 0) {
       var config = {
@@ -69,6 +82,44 @@ function initalizeFirebase() {
     };
     firebase.initializeApp(config);
   }
+}
+
+function insertBlogData(mode)
+{
+  for(var i=blogData.length-1;i>=0;i--)
+  {
+    const title = blogData[i].title;
+    const date = blogData[i].date;
+    const BID = i+1;
+    const content = "<p><a href=\"blog.html?blog="+BID+"\">"+title+" - "+date+"</a></p>";
+    if(mode=="all" || mode=="menu")
+      document.getElementById("content-body").innerHTML += content;
+    if(mode=="all" || mode=="memo")
+      document.getElementById("memo-inside").innerHTML += content;
+  }
+  //console.log("Blog Data inserted");
+}
+
+function loadAndInsertBlogData(mode,after)
+{
+  firebase.database().ref('blogs/zh/').once('value').then(function(snapshot) {
+  //console.log(snapshot.val());
+  var i=1;
+  //blogData = new Array();
+  while(snapshot.val()[i]!=null)
+  {
+    if(snapshot.val()[i].public=="Yes")
+      blogData.push(snapshot.val()[i]);
+    i++;
+  }
+
+  //Insert into page
+  insertBlogData(mode);
+  
+  if(after!=null)
+    after();
+  });
+  //console.log("Blog Data loaded");
 }
 
 //============================Start of Main JS===============================
