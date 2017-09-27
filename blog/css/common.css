@@ -42,6 +42,10 @@ body {
     -o-background-size: cover;
 }
 
+::selection {
+	background: transparent;
+}
+
 .bg-layer {
 	background-color: rgba(255, 255, 255, 0.5);
 	position: fixed;
@@ -205,6 +209,7 @@ body {
 	width: auto;
 	font-size: 16px;
 	line-height: 16px;
+	cursor: default;
 }
 
 .content-end p {
@@ -213,6 +218,20 @@ body {
 
 .content-end p+p {
 	margin-top: 5px;
+}
+
+.content-end a {
+	background-color: rgb(51,51,51);
+	background-color: rgba(51,51,51,0.8);
+	color: rgb(245,241,232);
+	color: rgba(245,241,232,1);
+	padding: 1px 3px;
+	border-radius: 3px;
+}
+
+.content-end a:hover,
+.content-end a:active {
+	text-decoration: none;
 }
 
 .menu-col-base {
@@ -267,18 +286,26 @@ body {
 	background-image: url(../img/nav_label.png);
 	background-repeat: no-repeat;
 	position: relative;
-	width: 360px; height: 114px;
+	width: 357px; height: 65px;
 	font-family: hanazome;
 	font-size: 36px;
 	
 	margin-top: 1em;
 	padding: 0.5em 1em;
+	box-shadow: 10px 10px 10px -5px grey;
 }
 
 .nav-label > a {
 	color: inherit;
 	position: absolute;
-	top: 40%; left: 40%;
+	top: 45%; left: 40%;
 	transform: translate(-50%,-50%);
 	text-decoration: none;
+}
+
+.nav-label > a:hover,
+.nav-label > a:active {
+	background-image: url(../img/underline.png);
+	background-repeat: repeat-x;
+	background-position: bottom center;
 }
