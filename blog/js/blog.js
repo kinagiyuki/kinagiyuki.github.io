@@ -15,10 +15,13 @@ function loadSingleBlog()
 		document.getElementById("head-image").src = singleInput.headImage;
 	inputContent(singleInput.content,'insert');
 	inputDate(singleInput.date);
+
+	blogData = "";
 }
 
 //====================================Start of Main JS======================================
-
+if(getParameterByName("blog")==null || getParameterByName("blog") == "")
+	window.location.href = "/blog/";
 //Initialize Firebase
 initalizeFirebase();
 

@@ -75,8 +75,8 @@ function inputContent(x,mode) {
         content += "<p>" + inputArray[i] + "</p>\n";
     }
   }
-  console.clear();
-  console.log(content);
+  //console.clear();
+  //console.log(content);
   if(mode=='insert')
   {
     var target = document.getElementById("content-body");
