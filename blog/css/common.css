@@ -155,7 +155,7 @@ body {
 
 .content-body .photo {
 	position: relative;
-	margin: 24px 0;
+	margin: 28.25px 0;
 	transform: rotate(1deg);
 }
 
@@ -166,8 +166,8 @@ body {
 }
 
 .content-body .photo > .photo-style {
-	max-width: 620px;
-	max-height: 320px;
+	max-width: 620px; /*600 + 20*/
+	height: 357.5px;	/*337.5 + 20*/
 }
 
 .content-body quote {

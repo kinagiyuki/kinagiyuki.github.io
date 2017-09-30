@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"backgroun",
+				"background-color"
+			],
+			[
+				"bor",
+				"border-radius"
+			],
+			[
+				"bac",
+				"background-position"
+			],
+			[
 				"s",
 				"singleInput"
 			],
@@ -66,10 +82,6 @@
 			[
 				"input",
 				"inputDate"
-			],
-			[
-				"text",
-				"text-align"
 			],
 			[
 				"lo",
@@ -190,10 +202,6 @@
 			[
 				"im",
 				"img-responsive"
-			],
-			[
-				"bac",
-				"background-repeat"
 			],
 			[
 				"backgr",
@@ -333,10 +341,19 @@
 			}
 		},
 		{
+			"file": "blog/blog_example.html",
+			"settings":
+			{
+				"buffer_size": 6074,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "blog/css/common.css",
 			"settings":
 			{
-				"buffer_size": 5137,
+				"buffer_size": 5659,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -392,15 +409,15 @@
 	],
 	"file_history":
 	[
+		"/D/GitHub/kinagiyuki.github.io/blog/index.html",
+		"/D/GitHub/kinagiyuki.github.io/blog/blog.html",
 		"/C/Users/kinagiyuki/Google 雲端硬碟/School/大學/COMP/4221/ass1.scm",
 		"/D/GitHub/kinagiyuki.github.io/blog/js/blog.js",
 		"/D/GitHub/kinagiyuki.github.io/css/homepage.css",
 		"/D/GitHub/kinagiyuki.github.io/js/homepage.js",
 		"/D/GitHub/kinagiyuki.github.io/blog/js/editing.js",
 		"/D/GitHub/kinagiyuki.github.io/blog/editing.html",
-		"/D/GitHub/kinagiyuki.github.io/blog/blog.html",
 		"/D/GitHub/kinagiyuki.github.io/blog/blog_example.html",
-		"/D/GitHub/kinagiyuki.github.io/blog/index.html",
 		"/D/GitHub/kinagiyuki.github.io/blog/js/index.js",
 		"/D/GitHub/kinagiyuki.github.io/index.html",
 		"/D/GitHub/myWeb/app/blog/blog.html",
@@ -524,19 +541,49 @@
 				},
 				{
 					"buffer": 1,
-					"file": "blog/css/common.css",
+					"file": "blog/blog_example.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5137,
+						"buffer_size": 6074,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3873,
-								3873
+								4119,
+								4119
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1215.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "blog/css/common.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5659,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								881,
+								881
 							]
 						],
 						"settings":
@@ -545,14 +592,14 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2610.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 3,
 					"file": "index.html",
 					"semi_transient": false,
 					"settings":
@@ -577,7 +624,7 @@
 						"translation.y": 210.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 3,
 					"type": "text"
 				}
 			]

@@ -1,6 +1,13 @@
 //Common global variable define
 var defaultHeadImage = "https://i.imgur.com/Sr26svx.jpg";
 var blogData = new Array();
+var tagData = new Array();
+tagData['[img]'] = "<div class=\"photo\">\n"+
+  "<img src=\"img/tape02.jpg\" class=\"tape\">\n" + 
+  "<img src=\"[url]\" class=\"img-responsive center-block photo-style\">\n"+
+  "</div>\n";
+tagData['[link]'] = "<a href=\"[url]\">[content]</a>";
+
 
 //======================Function declaration and definition==================
 function inputDate(x) {
@@ -12,8 +19,12 @@ function inputContent(x,mode) {
   var inputArray = x.split(/\r\n|\r|\n/g);
   var content = "";
   var isQuote = false;
+
   for(var i=0;i<inputArray.length;i++)
   {
+    var tag = inputArray[i].match(/\[\w*\]/ig);
+    console.log(tag);
+
     if(isQuote)
     {
       if(inputArray[i].lastIndexOf("//")==(inputArray[i].length-2))
@@ -41,12 +52,31 @@ function inputContent(x,mode) {
         isQuote = true;
         content += "<quote>" + inputArray[i].substring(2);
       }
+      else if(tag!=null)
+      {
+        if(tag=="[img]")
+          content += tagData[tag].replace("[url]",inputArray[i].replace(tag,""));
+        else if(tag[0]=="[link]")
+        {
+          var tagHandle = inputArray[i];
+          content += "<p>" + tagHandle.substring(0,tagHandle.indexOf("[link]"));
+          for(var j=0;j<tag.length;j++)
+          {
+            var linkDetail = tagHandle.substring(tagHandle.indexOf("[link]")+"[link]".length,tagHandle.indexOf("[/]")).split(",");
+            content += tagData[tag[j]].replace("[url]",linkDetail[0]).replace("[content]",linkDetail[1]);
+            tagHandle = tagHandle.substring(tagHandle.indexOf("[/]")+3);
+            content += (tagHandle!="")?((j<tag.length-1)?tagHandle.substring(0,tagHandle.indexOf("[link]")):tagHandle):"";
+            tagHandle = (tagHandle!="")?((j<tag.length-1)?tagHandle.substring(tagHandle.indexOf("[link]")+"[link]".length):tagHandle):"";
+          }
+          content += "</p>\n";
+        }
+      }
       else
         content += "<p>" + inputArray[i] + "</p>\n";
     }
   }
-  //console.clear();
-  //console.log(content);
+  console.clear();
+  console.log(content);
   if(mode=='insert')
   {
     var target = document.getElementById("content-body");
