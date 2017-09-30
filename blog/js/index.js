@@ -9,4 +9,4 @@ initalizeFirebase();
 
 //Loading and inserting blog data from Firebase
 loadAndInsertBlogData("all");
-blogData = "";
+//blogData = "";

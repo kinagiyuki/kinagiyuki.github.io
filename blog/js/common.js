@@ -23,7 +23,7 @@ function inputContent(x,mode) {
   for(var i=0;i<inputArray.length;i++)
   {
     var tag = inputArray[i].match(/\[\w*\]/ig);
-    console.log(tag);
+    //console.log(tag);
 
     if(isQuote)
     {
@@ -148,6 +148,8 @@ function loadAndInsertBlogData(mode,after)
   
   if(after!=null)
     after();
+
+  blogData = "";
   });
   //console.log("Blog Data loaded");
 }

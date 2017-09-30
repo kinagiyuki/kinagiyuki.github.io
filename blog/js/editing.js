@@ -91,7 +91,7 @@ function load() {
     console.log("Not new");
     seletedID = blogLoad.value;
     var loadIndex = parseInt(seletedID)-1;
-    if(blogData[loadIndex].headImage==null)
+    if(blogData[loadIndex].headImage==null||blogData[loadIndex].headImage=="")
       document.getElementById("head-image").src = defaultHeadImage;
     else
     {
