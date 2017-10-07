@@ -142,7 +142,7 @@ ita {
 	min-height: 500px;
 }
 
-.content-body p{
+.content-body p {
 	padding: 0;
 	margin: 0;
 }
@@ -155,6 +155,10 @@ ita {
 	font-style: italic;
 	text-align: right;
 	opacity: 0.8;
+}
+
+.content-body p::before {
+	content: "　　";
 }
 
 .content-body .photo {
@@ -242,24 +246,7 @@ ita {
 	position: relative;
 }
 
-.memo {
-	background-image: url(../img/navigation.png);
-	background-repeat: no-repeat;
-	height: 371px;
-	font-family: hanazome;
-	font-size: 16px;
-	color: lightyellow;
-
-	padding-top: 2em;
-	padding-left: 1em; 
-	padding-right: 0.8em; 
-}
-
-.menu-col {
-	position: fixed;
-	top: 1%; right: 23%;
-}
-
+.memo,
 .blog-memo {
 	background-image: url(../img/navigation.png);
 	background-repeat: no-repeat;
@@ -268,10 +255,20 @@ ita {
 	font-size: 16px;
 	color: lightyellow;
 
-	margin-top: 2em;
 	padding-top: 2em;
 	padding-left: 1em; 
 	padding-right: 0.8em; 
+
+	position: relative;
+}
+
+.menu-col {
+	position: fixed;
+	top: 1%; right: 23%;
+}
+
+.blog-memo {
+	margin-top: 2em;
 }
 
 .memo a,
@@ -284,6 +281,20 @@ ita {
 .blog-memo a:hover {
 	color: rgb(220,220,184);
 	text-decoration: none;
+}
+
+.memo p,
+.blog-memo p {
+	text-overflow: ellipsis;
+	white-space: nowrap; 
+	overflow: hidden;
+}
+
+.memo .share-part,
+.blog-memo .share-part {
+	position: absolute;
+	bottom: 10%; left: 1em;
+	max-width: 330px;
 }
 
 .nav-label {
