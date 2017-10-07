@@ -160,11 +160,15 @@ $(window).scroll(function() {
 	var width = window.innerWidth || document.body.clientWidth;
 	width = (width-1070)/2 - 44;
 
-	if($(this).scrollTop() > 500)
-	{
-		$('#menu-col').addClass('menu-col');
-		document.getElementsByClassName("menu-col")[0].style.right = width+"px";
-	}
-	else 
-		$('#menu-col').removeClass('menu-col');
+  if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) 
+  {
+    if($(this).scrollTop() > 500)
+    {
+      $('#menu-col').addClass('menu-col');
+      document.getElementsByClassName("menu-col")[0].style.right = width+"px";
+    }
+    else 
+      $('#menu-col').removeClass('menu-col');
+  }
+	
 });
