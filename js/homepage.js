@@ -128,22 +128,25 @@ var skipAll = function()
 	//notice.style.display = "block";
 }
 skip.addEventListener("mousedown", skipAll, false);
+//End of Animate function
 
+//======================Homepage function===================
+function open(input) {
+	document.getElementById(input).style.display = "block";
+	setTimeout(function(){document.getElementById(input).style.opacity = "1";},100);
+}
+
+function close(input) {
+	document.getElementById(input).style.opacity = "0";
+	setTimeout(function(){document.getElementById(input).style.display = "none";},500);
+}
+
+//Main
 window.onload = function() {
 	showSentense.play();
 	var skip_btn = document.getElementById('skip');
 	skip_btn.innerHTML = "Skip<span class=\"glyphicon glyphicon-forward\" aria-hidden=\"true\" style=\"padding-left: 10px;\"></span>";
 	$('#skip').removeClass('disable');
-}
 
-
-//======================Homepage function===================
-function open(input) {
-	document.getElementById(input).style.display = "block";
-	document.getElementById(input).style.visibility = "visible";
-}
-
-function close(input) {
-	document.getElementById(input).style.visibility = "hidden";
-	document.getElementById(input).style.display = "none";
+	document.getElementById("self-intro-wrapper").addEventListener("click",function() {close("self-intro-wrapper");});
 }

@@ -37,7 +37,29 @@
 
 <body>
 
-<img src="../img/favicons/android-chrome-256x256.png" style="display: none;">    
+<img src="../img/favicons/android-chrome-256x256.png" style="display: none;">
+
+    <!-- Navigate Button for mobile device -->
+    <div class="mobile-nav" onclick="switchMobileNav();">
+        <span class="glyphicon glyphicon-th" aria-hidden="true"></span>
+    </div>
+    <div id="mobile-nav-wrapper">
+        <div id="mobile-nav-content">
+            <div class="mobile-recent-blog">
+                <p>Recent Blogs</p>
+                <span id="mobile-recent-blog-content"></span>
+            </div>
+            <div class="share-part">
+                <p>Share this!</p>
+                <span id="mobile-twitter-share"></span>
+            </div>
+            <div class="nav-part">
+                <a href="/blog"><span class="glyphicon glyphicon-list"></span> Menu</a> 
+                <a href="/"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a>
+            </div>
+        </div>
+    </div>
+    <!-- End of Navigate Button for mobile device --> 
 
     <!-- Page Content -->
     <div class="container">

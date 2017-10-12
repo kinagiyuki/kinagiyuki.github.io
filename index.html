@@ -40,7 +40,7 @@
 	<div class="content">
 		<div id="student-card">
 			<img src="img/homepage/student_card.png">
-			<a href="javascript:open('self-intro');"><img src="img/homepage/icon_v1.jpg" class="profile-pic" height="200"></a>
+			<a href="javascript:open('self-intro-wrapper');"><img src="img/homepage/icon_v1.jpg" class="profile-pic" height="200"></a>
 			<div class="interest">
 				<div class="interest-tag">AI</div>
 				<div class="interest-tag">VR</div>
@@ -74,39 +74,41 @@
 	</div>
 
 	<!-- Self introduction wrapper -->
-	<div id="self-intro">
-		<div class="row">
-			<div class="col-xs-3">
-				<img src="img/homepage/icon_v1.jpg" class="img-responsive center-block" height="200">
-				<div class="show-label">
-					<a href="https://www.facebook.com/kinagiyuki"><i class="fa fa-facebook-square fa-intro" aria-hidden="true"></i></a>
-					<a href="https://twitter.com/kinagiyuki"><i class="fa fa-twitter-square fa-intro" aria-hidden="true"></i></a>
-					<a href="https://github.com/kinagiyuki"><i class="fa fa-github-square fa-intro" aria-hidden="true"></i></a>
-					<a href="https://www.instagram.com/kinagiyuki/"><i class="fa fa-instagram fa-intro" aria-hidden="true"></i></a>
+	<div id="self-intro-wrapper">
+		<div id="self-intro">
+			<div class="row">
+				<div class="col-xs-3">
+					<img src="img/homepage/icon_v1.jpg" class="img-responsive center-block" height="200">
+					<div class="show-label">
+						<a href="https://www.facebook.com/kinagiyuki"><i class="fa fa-facebook-square fa-intro" aria-hidden="true"></i></a>
+						<a href="https://twitter.com/kinagiyuki"><i class="fa fa-twitter-square fa-intro" aria-hidden="true"></i></a>
+						<a href="https://github.com/kinagiyuki"><i class="fa fa-github-square fa-intro" aria-hidden="true"></i></a>
+						<a href="https://www.instagram.com/kinagiyuki/"><i class="fa fa-instagram fa-intro" aria-hidden="true"></i></a>
+					</div>
+					<hr>
+					<div class="good-at">
+						<span class="red-tag">C++</span>
+						<span class="red-tag">Java</span>
+						<span class="red-tag">Python</span>
+						<span class="red-tag">JS</span>
+						<span class="red-tag">SQL</span>
+					</div>	
 				</div>
-				<hr>
-				<div class="good-at">
-					<span class="red-tag">C++</span>
-					<span class="red-tag">Java</span>
-					<span class="red-tag">Python</span>
-					<span class="red-tag">JS</span>
-					<span class="red-tag">SQL</span>
-				</div>	
-			</div>
-			<div class="col-xs-offset-1 col-xs-8">
-				<h3>樹ナギ雪<span class="label label-warning">實習中……</span></h3>
-				<blockquote>
-					<p style="font-style: italic;"">普通星に生まれた普通星人です。</p>
-				</blockquote>
-				<hr>
-				<div class="intro-content">
-					<p>
-						弄這個網站純粹是個人興趣，不如期待完整性吶。不過還是應該會有很多有趣的東西這在裡，也不至於令你失望。ｗ<br>
-					</p>
+				<div class="col-xs-offset-1 col-xs-8">
+					<h3>樹ナギ雪<span class="label label-warning">實習中……</span></h3>
+					<blockquote>
+						<p style="font-style: italic;"">普通星に生まれた普通星人です。</p>
+					</blockquote>
+					<hr>
+					<div class="intro-content">
+						<p>
+							弄這個網站純粹是個人興趣，不如期待完整性吶。不過還是應該會有很多有趣的東西這在裡，也不至於令你失望。ｗ<br>
+						</p>
+					</div>
 				</div>
 			</div>
+			<a class="close" href="javascript:close('self-intro-wrapper');"><div class="glyphicon glyphicon-remove"></div></a>
 		</div>
-		<a class="close" href="javascript:close('self-intro');"><div class="glyphicon glyphicon-remove"></div></a>
 	</div>
 	<!-- End of Self introduction -->
 	
@@ -116,21 +118,29 @@
 		<img src="https://i.imgur.com/WT0a6vs.png" class="img-responsive">
 		<div class="notice-content">
 			<h1>Notice:</h1>
-			<ul>
-				<li>Beta v0.5
-					<ul>
-						<li>Slight modification and improvement on some UI.</li>
-						<li>Share button added.</li>
-						<li><a href="/blog/blog.html?blog=2">μ'sへの思い、そしてAqoursに（一）</a></li>
-					</ul>
-				</li>
-				<li>Beta v0.3
-					<ul>
-						<li><a href="/blog/blog.html?blog=1">Hello World!</a></li>
-						<li>Blog page is opened.</li>
-					</ul>
-				</li>
-			</ul>
+			<div class="notice-content-list">
+				<ul>
+					<li>
+						Beta v0.5.5.3
+						<ul>
+							<li>Mobile View for <a href="/blog">Blog page</a> is implemented.</li>
+						</ul>
+					</li>
+					<li>Beta v0.5
+						<ul>
+							<li>Slight modification and improvement on some UI.</li>
+							<li>Share button added.</li>
+							<li><a href="/blog/blog.html?blog=2">μ'sへの思い、そしてAqoursに（一）</a></li>
+						</ul>
+					</li>
+					<li>Beta v0.3
+						<ul>
+							<li><a href="/blog/blog.html?blog=1">Hello World!</a></li>
+							<li>Blog page is opened.</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
 		</div>
 	</div>
 	<!-- End of notice -->

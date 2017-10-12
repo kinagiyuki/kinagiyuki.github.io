@@ -4,8 +4,56 @@
 		"selected_items":
 		[
 			[
+				"inli",
+				"inline"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"memo",
+				"memoContent"
+			],
+			[
+				"mobile-",
+				"mobile-recent-blog"
+			],
+			[
+				"mobile",
+				"mobile-nav"
+			],
+			[
 				"max",
 				"max-width"
+			],
+			[
+				"tra",
+				"transform"
+			],
+			[
+				"mob",
+				"mobileNavOriginPosition"
+			],
+			[
+				"tran",
+				"transition"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"on",
+				"onmousedown\tAttr"
+			],
+			[
+				"op",
+				"opacity"
 			],
 			[
 				"ta",
@@ -22,10 +70,6 @@
 			[
 				"input",
 				"inputArray"
-			],
-			[
-				"text",
-				"text-decoration"
 			],
 			[
 				"backgroun",
@@ -61,10 +105,6 @@
 			],
 			[
 				"ma",
-				"margin-top"
-			],
-			[
-				"mar",
 				"margin-top"
 			],
 			[
@@ -152,10 +192,6 @@
 				"transform"
 			],
 			[
-				"tra",
-				"translate"
-			],
-			[
 				"padd",
 				"padding-left"
 			],
@@ -230,10 +266,6 @@
 			[
 				"rb",
 				"rgba()"
-			],
-			[
-				"pa",
-				"padding"
 			],
 			[
 				"fon",
@@ -343,34 +375,7 @@
 			"file": "blog/js/common.js",
 			"settings":
 			{
-				"buffer_size": 5565,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "blog/css/common.css",
-			"settings":
-			{
-				"buffer_size": 5783,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "blog/js/editing.js",
-			"settings":
-			{
-				"buffer_size": 6986,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "blog/editing.html",
-			"settings":
-			{
-				"buffer_size": 7766,
+				"buffer_size": 6425,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -379,7 +384,25 @@
 			"file": "blog/index.html",
 			"settings":
 			{
-				"buffer_size": 4432,
+				"buffer_size": 5559,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "blog/css/common.css",
+			"settings":
+			{
+				"buffer_size": 8839,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "blog/blog_example.html",
+			"settings":
+			{
+				"buffer_size": 7607,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -388,8 +411,18 @@
 			"file": "blog/js/blog.js",
 			"settings":
 			{
-				"buffer_size": 1750,
+				"buffer_size": 1857,
+				"encoding": "UTF-8",
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "blog/blog.html",
+			"settings":
+			{
+				"buffer_size": 5342,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -428,27 +461,28 @@
 		"/D/GitHub/kinagiyuki.github.io",
 		"/D/GitHub/kinagiyuki.github.io/blog",
 		"/D/GitHub/kinagiyuki.github.io/blog/css",
-		"/D/GitHub/kinagiyuki.github.io/blog/js",
-		"/D/GitHub/kinagiyuki.github.io/css",
-		"/D/GitHub/kinagiyuki.github.io/js"
+		"/D/GitHub/kinagiyuki.github.io/css"
 	],
 	"file_history":
 	[
+		"/C/Users/kinagiyuki/Documents/STAR WARS Battlefront II Multiplayer Beta/settings/BootOptions",
+		"/D/GitHub/kinagiyuki.github.io/blog/js/editing.js",
+		"/D/GitHub/kinagiyuki.github.io/js/homepage.js",
+		"/D/GitHub/kinagiyuki.github.io/index.html",
+		"/D/GitHub/kinagiyuki.github.io/css/homepage.css",
+		"/D/GitHub/kinagiyuki.github.io/blog/css/common.css",
+		"/C/Users/kinagiyuki/Documents/STAR WARS Battlefront II Multiplayer Beta/settings/ProfileOptions_profile_synced",
+		"/C/Users/kinagiyuki/Documents/STAR WARS Battlefront II Multiplayer Beta/settings/ProfileOptions_profile",
+		"/D/GitHub/kinagiyuki.github.io/blog/editing.html",
+		"/D/GitHub/kinagiyuki.github.io/blog/blog.html",
+		"/D/GitHub/kinagiyuki.github.io/blog/index.html",
 		"/D/GitHub/kinagiyuki.github.io/blog/js/index.js",
 		"/D/GitHub/kinagiyuki.github.io/blog/blog_example.html",
-		"/D/GitHub/kinagiyuki.github.io/blog/blog.html",
 		"/D/GitHub/kinagiyuki.github.io/blog/js/blog.js",
 		"/D/GitHub/kinagiyuki.github.io/package.json",
 		"/D/GitHub/kinagiyuki.github.io/karma.conf.js",
-		"/D/GitHub/kinagiyuki.github.io/blog/index.html",
-		"/C/Users/kinagiyuki/Documents/STAR WARS Battlefront II Multiplayer Beta/settings/BootOptions",
 		"/C/Users/kinagiyuki/Documents/STAR WARS Battlefront II Multiplayer Beta/settings/ProfileOptions",
 		"/C/Users/kinagiyuki/Google 雲端硬碟/School/大學/COMP/4221/ass1.scm",
-		"/D/GitHub/kinagiyuki.github.io/index.html",
-		"/D/GitHub/kinagiyuki.github.io/blog/editing.html",
-		"/D/GitHub/kinagiyuki.github.io/css/homepage.css",
-		"/D/GitHub/kinagiyuki.github.io/js/homepage.js",
-		"/D/GitHub/kinagiyuki.github.io/blog/js/editing.js",
 		"/D/GitHub/myWeb/app/blog/blog.html",
 		"/D/GitHub/kinagiyuki.github.io/blog/css/editing.css",
 		"/D/GitHub/myWeb/app/blog/editing.html",
@@ -513,6 +547,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"85",
 			"notice",
 			"\t\n",
 			"numpy",
@@ -535,7 +570,7 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -544,15 +579,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5565,
+						"buffer_size": 6425,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								846,
-								846
+								5212,
+								5212
 							]
 						],
 						"settings":
@@ -562,7 +597,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1395.0,
+						"translation.y": 1710.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
@@ -570,78 +605,19 @@
 				},
 				{
 					"buffer": 1,
-					"file": "blog/css/common.css",
+					"file": "blog/index.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 5783,
+						"buffer_size": 5559,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5196,
-								5196
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 3706.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "blog/js/editing.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 6986,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2750,
-								2750
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1350.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "blog/editing.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 7766,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3006,
-								3006
+								2233,
+								2233
 							]
 						],
 						"settings":
@@ -651,27 +627,115 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1290.0,
+						"translation.y": 585.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "blog/index.html",
+					"buffer": 2,
+					"file": "blog/css/common.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4432,
+						"buffer_size": 8839,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1676,
-								1676
+								8108,
+								8108
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2030.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "blog/blog_example.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7607,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2288,
+								1458
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1530.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "blog/js/blog.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1857,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1282,
+								1282
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "blog/blog.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5342,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1537,
+								2428
 							]
 						],
 						"settings":
@@ -684,36 +748,7 @@
 						"translation.y": 225.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "blog/js/blog.js",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 1750,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]

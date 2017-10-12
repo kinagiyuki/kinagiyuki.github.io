@@ -7,6 +7,8 @@ tagData['[img]'] = "<div class=\"photo\">\n"+
   "<img src=\"[url]\" class=\"img-responsive center-block photo-style\">\n"+
   "</div>\n";
 tagData['[link]'] = "<a href=\"[url]\">[content]</a>";
+//tagData['[dl]'] = "<p class='dl'>▼△▼△▼△▼△▼△▼△▼△▼△▼△▼△▼△▼△</p>\n";
+tagData['[dl]'] = "<p class=\"dl\"><line></line></p>";
 
 
 //======================Function declaration and definition==================
@@ -56,6 +58,8 @@ function inputContent(x,mode) {
       {
         if(tag=="[img]")
           content += tagData[tag].replace("[url]",inputArray[i].replace(tag,""));
+        else if(tag=="[dl]")
+          content += tagData[tag];
         else if(tag[0]=="[link]")
         {
           var tagHandle = inputArray[i];
@@ -99,6 +103,30 @@ function getParameterByName(name)
   return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
 
+//Mobile navigate menu related function
+function switchMobileNav()
+{
+  var target = document.getElementById("mobile-nav-wrapper").style;
+  if(target.transform!="translate(0px, 0px)")
+  {
+    target.transform = "translate(0,0)";
+    target.boxShadow  = "0px 3px 3px rgba(86,36,36,0.5)";
+    setTimeout(function(){
+      document.getElementById("mobile-nav-content").style.opacity = "1";
+    },250);
+  }
+  else
+  {
+    document.getElementById("mobile-nav-content").style.opacity = "0";
+    setTimeout(function(){
+      target.transform = "translate(100%,-100%)";
+      target.boxShadow  = "0 0 0 grey";
+    },100);
+  }
+  //target.width = "100%";
+  //target.height = "400px";
+}
+
 //==================== Firebase related ==============================
 function initalizeFirebase() {
   if (firebase.apps.length === 0) {
@@ -121,11 +149,15 @@ function insertBlogData(mode)
     const title = blogData[i].title;
     const date = blogData[i].date;
     const BID = i+1;
-    const content = "<p><a href=\"blog.html?blog="+BID+"\">"+title+" - "+date+"</a></p>";
+    const content = "<p class='title-"+((i%2)?"A":"B")+"'><a href=\"blog.html?blog="+BID+"\">"+title+" - "+date+"</a></p>";
+    const memoContent = "<p><a href=\"blog.html?blog="+BID+"\">"+title+"</a></p>";
     if(mode=="all" || mode=="menu")
       document.getElementById("content-body").innerHTML += content;
     if(mode=="all" || mode=="memo")
-      document.getElementById("memo-inside").innerHTML += content;
+    {
+      document.getElementById("memo-inside").innerHTML += memoContent;
+      document.getElementById("mobile-recent-blog-content").innerHTML += memoContent;
+    }
   }
   //console.log("Blog Data inserted");
 }
@@ -159,6 +191,7 @@ function loadAndInsertBlogData(mode,after)
 $(window).scroll(function() {
 	var width = window.innerWidth || document.body.clientWidth;
 	width = (width-1070)/2 - 44;
+  //width = (width-1070)/2 - 88;
 
   if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) 
   {
@@ -172,3 +205,4 @@ $(window).scroll(function() {
   }
 	
 });
+

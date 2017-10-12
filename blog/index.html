@@ -37,6 +37,28 @@
 
 <body>
 
+    <!-- Navigate Button for mobile device -->
+    <div class="mobile-nav" onclick="switchMobileNav();">
+        <span class="glyphicon glyphicon-th" aria-hidden="true"></span>
+    </div>
+    <div id="mobile-nav-wrapper">
+        <div id="mobile-nav-content">
+            <div class="mobile-recent-blog">
+                <p>Recent Blogs</p>
+                <span id="mobile-recent-blog-content"></span>
+            </div>
+            <div class="share-part">
+                <p>Share this!</p>
+                <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="Kinagiyuki&#39;s Blog" data-hashtags="kinagiyuki_blog" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+            <div class="nav-part">
+                <a href="/blog"><span class="glyphicon glyphicon-list"></span> Menu</a> 
+                <a href="/"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a>
+            </div>
+        </div>
+    </div>
+    <!-- End of Navigate Button for mobile device --> 
+
     <div class="title">
         <img src="https://i.imgur.com/Sr26svx.jpg" class="img-responsive center-block" alt="Responsive image" style="margin-bottom: 20px;">
         <span class="title-content">樹ナギ雪のブログ<small>beta0.3</small></span>

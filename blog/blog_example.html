@@ -37,7 +37,26 @@
 
 <body>
 
-    
+    <!-- Navigate Button for mobile device -->
+    <div class="mobile-nav" onclick="switchMobileNav();">
+        <span class="glyphicon glyphicon-th" aria-hidden="true"></span>
+    </div>
+    <div id="mobile-nav-wrapper">
+        <div id="mobile-nav-content">
+            <div class="mobile-recent-blog">
+                <p>これはテストです。しばらくお待ちください。</p>
+            </div>
+            <div class="share-part">
+                Share this!
+                <span id="mobile-twitter-share"></span>
+            </div>
+            <div class="nav-part">
+                <a href="/blog"><span class="glyphicon glyphicon-list"></span> Menu</a> 
+                <a href="/"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a>
+            </div>
+        </div>
+    </div>
+    <!-- End of Navigate Button for mobile device -->
 
     <!-- Page Content -->
     <div class="container">
@@ -85,7 +104,7 @@
                         </div>
                         <p>これはテストです。しばらくお待ちください。</p>
                         <p>これはテストです。しばらくお待ちください。</p>
-                        <p>これはテストです。しばらくお待ちください。</p>
+                        <p class="dl"><line></line></p>
                         <p>Testing: 喔咦喂吧。</p>
                         <p>これはテストです。しばらくお待ちください。</p>
                         <p>これはテストです。しばらくお待ちください。</p>
@@ -143,16 +162,6 @@
         <!-- /.row -->
 
         <hr>
-
-        <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
-                </div>
-            </div>
-            <!-- /.row -->
-        </footer>
 
     </div>
 

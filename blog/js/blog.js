@@ -18,6 +18,7 @@ function loadSingleBlog()
 
 	var url = window.location.href.toString();
 	var twitter = document.getElementById("twitter-share");
+	var mobileTwitter = document.getElementById("mobile-twitter-share");
 	var content = "<a href=\"https://twitter.com/share?ref_src=twsrc%5Etfw\" "+
 	"class=\"twitter-share-button\" data-text=\""+singleInput.title+"\n\" data-hashtags=\"kinagiyuki_blog\" "+
 	"data-show-count=\"false\">Tweet</a>"+
@@ -26,6 +27,7 @@ function loadSingleBlog()
 	//span.innerHTML = content;
 	//twitter.appendChild(span);
 	twitter.innerHTML += content;
+	mobileTwitter.innerHTML += content;
 
 	$.ajax({ url: 'http://platform.twitter.com/widgets.js', dataType: 'script', cache:true});
 	
