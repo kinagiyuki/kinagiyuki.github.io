@@ -111,6 +111,13 @@ function switchMobileNav()
   {
     target.transform = "translate(0,0)";
     target.boxShadow  = "0px 3px 3px rgba(86,36,36,0.5)";
+    $(".mobile-nav")[0].style.opacity = 1;
+    if(document.getElementById("mobile-nav-icon").classList.contains("glyphicon-th"))
+    {
+      document.getElementById("mobile-nav-icon").classList.remove("glyphicon-th");
+      document.getElementById("mobile-nav-icon").classList.add("glyphicon-remove");
+    }
+
     setTimeout(function(){
       document.getElementById("mobile-nav-content").style.opacity = "1";
     },250);
@@ -121,6 +128,12 @@ function switchMobileNav()
     setTimeout(function(){
       target.transform = "translate(100%,-100%)";
       target.boxShadow  = "0 0 0 grey";
+      $(".mobile-nav")[0].style.opacity = 0.5;
+      if(document.getElementById("mobile-nav-icon").classList.contains("glyphicon-remove"))
+      {
+        document.getElementById("mobile-nav-icon").classList.remove("glyphicon-remove");
+        document.getElementById("mobile-nav-icon").classList.add("glyphicon-th");
+      }
     },100);
   }
   //target.width = "100%";

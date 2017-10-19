@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"img",
+				"img-responsive"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"over",
+				"overflow-y"
+			],
+			[
+				"tra",
+				"transition"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"text",
+				"text-indent"
+			],
+			[
 				"inli",
 				"inline"
 			],
@@ -24,28 +48,12 @@
 				"mobile-nav"
 			],
 			[
-				"max",
-				"max-width"
-			],
-			[
-				"tra",
-				"transform"
-			],
-			[
 				"mob",
 				"mobileNavOriginPosition"
 			],
 			[
 				"tran",
 				"transition"
-			],
-			[
-				"mar",
-				"margin"
-			],
-			[
-				"text",
-				"text-align"
 			],
 			[
 				"on",
@@ -375,43 +383,16 @@
 			"file": "blog/js/common.js",
 			"settings":
 			{
-				"buffer_size": 6425,
+				"buffer_size": 7489,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "blog/index.html",
-			"settings":
-			{
-				"buffer_size": 5559,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
 			}
 		},
 		{
 			"file": "blog/css/common.css",
 			"settings":
 			{
-				"buffer_size": 8839,
-				"encoding": "UTF-8",
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "blog/blog_example.html",
-			"settings":
-			{
-				"buffer_size": 7607,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "blog/js/blog.js",
-			"settings":
-			{
-				"buffer_size": 1857,
+				"buffer_size": 10412,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -420,9 +401,18 @@
 			"file": "blog/blog.html",
 			"settings":
 			{
-				"buffer_size": 5342,
+				"buffer_size": 5363,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/D/maimai_simulator/maidata.txt",
+			"settings":
+			{
+				"buffer_size": 1277,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -461,24 +451,27 @@
 		"/D/GitHub/kinagiyuki.github.io",
 		"/D/GitHub/kinagiyuki.github.io/blog",
 		"/D/GitHub/kinagiyuki.github.io/blog/css",
+		"/D/GitHub/kinagiyuki.github.io/blog/js",
 		"/D/GitHub/kinagiyuki.github.io/css"
 	],
 	"file_history":
 	[
-		"/C/Users/kinagiyuki/Documents/STAR WARS Battlefront II Multiplayer Beta/settings/BootOptions",
-		"/D/GitHub/kinagiyuki.github.io/blog/js/editing.js",
-		"/D/GitHub/kinagiyuki.github.io/js/homepage.js",
 		"/D/GitHub/kinagiyuki.github.io/index.html",
 		"/D/GitHub/kinagiyuki.github.io/css/homepage.css",
+		"/D/GitHub/kinagiyuki.github.io/js/homepage.js",
+		"/D/Program Files (x86)/GoldWave/readme.htm",
+		"/C/Users/kinagiyuki/mathFunction.py",
+		"/D/GitHub/kinagiyuki.github.io/blog/blog_example.html",
+		"/D/GitHub/kinagiyuki.github.io/blog/index.html",
+		"/D/GitHub/kinagiyuki.github.io/blog/blog.html",
+		"/D/GitHub/kinagiyuki.github.io/blog/js/blog.js",
+		"/C/Users/kinagiyuki/Documents/STAR WARS Battlefront II Multiplayer Beta/settings/BootOptions",
+		"/D/GitHub/kinagiyuki.github.io/blog/js/editing.js",
 		"/D/GitHub/kinagiyuki.github.io/blog/css/common.css",
 		"/C/Users/kinagiyuki/Documents/STAR WARS Battlefront II Multiplayer Beta/settings/ProfileOptions_profile_synced",
 		"/C/Users/kinagiyuki/Documents/STAR WARS Battlefront II Multiplayer Beta/settings/ProfileOptions_profile",
 		"/D/GitHub/kinagiyuki.github.io/blog/editing.html",
-		"/D/GitHub/kinagiyuki.github.io/blog/blog.html",
-		"/D/GitHub/kinagiyuki.github.io/blog/index.html",
 		"/D/GitHub/kinagiyuki.github.io/blog/js/index.js",
-		"/D/GitHub/kinagiyuki.github.io/blog/blog_example.html",
-		"/D/GitHub/kinagiyuki.github.io/blog/js/blog.js",
 		"/D/GitHub/kinagiyuki.github.io/package.json",
 		"/D/GitHub/kinagiyuki.github.io/karma.conf.js",
 		"/C/Users/kinagiyuki/Documents/STAR WARS Battlefront II Multiplayer Beta/settings/ProfileOptions",
@@ -512,7 +505,6 @@
 		"/D/myWeb/app/js/narbar.js",
 		"/D/myWeb/app/js/web-animations.min.js",
 		"/C/Users/kinagiyuki/Google 雲端硬碟/School/大學/COMP/4221/ass2.scm",
-		"/C/Users/kinagiyuki/mathFunction.py",
 		"/C/Users/kinagiyuki/init.py",
 		"/C/Users/kinagiyuki/Desktop/desktop.ini",
 		"/D/myWeb/package.json",
@@ -547,6 +539,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"5",
 			"85",
 			"notice",
 			"\t\n",
@@ -570,7 +563,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -579,15 +572,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6425,
+						"buffer_size": 7489,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5212,
-								5212
+								4813,
+								4813
 							]
 						],
 						"settings":
@@ -597,57 +590,27 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1710.0,
+						"translation.y": 1485.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "blog/index.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5559,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2233,
-								2233
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 585.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "blog/css/common.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 8839,
+						"buffer_size": 10412,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								8108,
-								8108
+								7280,
+								7280
 							]
 						],
 						"settings":
@@ -656,99 +619,68 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 2030.0,
+						"translation.y": 5445.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "blog/blog.html",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 5363,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1636,
+								1636
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 270.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "blog/blog_example.html",
+					"file": "/D/maimai_simulator/maidata.txt",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7607,
+						"buffer_size": 1277,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2288,
-								1458
+								1257,
+								1257
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 1530.0,
+						"translation.y": 135.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "blog/js/blog.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1857,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1282,
-								1282
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "blog/blog.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5342,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1537,
-								2428
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 225.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
+					"stack_index": 0,
 					"type": "text"
 				}
 			]

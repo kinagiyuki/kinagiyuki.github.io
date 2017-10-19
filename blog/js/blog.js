@@ -9,6 +9,7 @@ function loadSingleBlog()
 		window.location.href="/blog"
 	;
 	document.getElementById("content-heading").innerHTML = singleInput.title;
+	document.title = singleInput.title + " - Kinagiyuki's blog";
 	if(singleInput.headImage==null)
 		document.getElementById("head-image").src = defaultHeadImage;
 	else

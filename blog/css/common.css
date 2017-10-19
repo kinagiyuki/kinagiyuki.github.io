@@ -379,6 +379,8 @@ ita {
 
 	z-index: 2;
 	display: none;
+	opacity: 0.5;
+	transition: opacity 0.5s;
 }
 
 #mobile-nav-wrapper {
@@ -428,6 +430,83 @@ ita {
 	position: absolute;
 	bottom: 20px; left: 0;
 	max-width: 380px; max-height: 20px;
+}
+
+/*Tablap View*/
+@media screen and (min-width: 420px) and (max-width: 1024px) {
+	.blog-title > .photo > .tape {
+		max-width: 450px;
+		max-height: 30px;
+	}
+
+	.blog-title > .photo > .photo-style {
+		max-width: 660px; /*650+10*/
+		max-height: 210px; /*200+10*/
+	}
+
+	.title-content {
+		font-size: 36px;
+		width: 380px;
+	}
+
+	.title-content small {
+		font-size: 12px;
+	}
+
+	.content-heading {
+		padding-top: 0.5em;
+		font-size: 1.5em;
+	}
+
+	.content-body {
+		font-size: 20px;
+	}
+
+	.photo-style {
+		padding: 5px;
+		background-color: rgba(255,255,255,0.8);
+	}
+
+	.content-body .photo {
+		position: relative;
+		margin: 29.4375px 0;
+		transform: rotate(1deg);
+	}
+
+	.content-body .photo > .photo-style {
+		max-width: 460px; /*450 + 10*/
+		height: 263.125px;	/*253.125 + 10*/
+	}
+
+	.content-body .photo > .tape {
+		max-width: 450px;
+		max-height: 30px;
+	}
+
+	.content-body quote {
+		padding: 0 0.5em;
+		margin: 0 1em;
+		transform: translate(0,-9px);
+	}
+
+	.content-body p.dl line {
+		width: 450px;
+	}
+
+	.content-end {
+		margin-top: 0;
+		font-size: 14px;
+		line-height: 14px;
+	}
+
+	#menu-col {
+		display: none;
+	}
+
+	.mobile-nav,
+	#mobile-nav-wrapper {
+		display: block;
+	}
 }
 
 /*Mobile View*/
@@ -495,7 +574,6 @@ ita {
 		margin-top: 5px;
 		font-size: 8px;
 		line-height: 12px;
-		text-indent: 8px;
 	}
 
 	#menu-col {

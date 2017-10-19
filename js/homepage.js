@@ -107,7 +107,12 @@ var showNote = function()
 	notebookAnimation.play();
 }
 wrapperChange.onfinish = showNote;
-sakuraScene.onfinish = function(){document.getElementById("sakura").style.display = 'none';}
+sakuraScene.onfinish = function(){
+	document.getElementById("sakura").style.opacity = "0";
+	setTimeout(function(){
+		document.getElementById("sakura").style.display = 'none';
+	},500);
+}
 
 var showCardAndNotice = function()
 {
