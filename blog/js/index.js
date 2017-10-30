@@ -8,5 +8,7 @@ initalizeFirebase();
 //console.log("Connected to Firebase");
 
 //Loading and inserting blog data from Firebase
-loadAndInsertBlogData("all");
+region = (window.localStorage.getItem("_region"))?window.localStorage.getItem("_region"):"zh";
+loadAndInsertBlogData("all",null,region);
+delete region;
 //blogData = "";

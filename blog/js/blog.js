@@ -9,7 +9,7 @@ function loadSingleBlog()
 		window.location.href="/blog"
 	;
 	document.getElementById("content-heading").innerHTML = singleInput.title;
-	document.title = singleInput.title + " - Kinagiyuki's blog";
+	document.title = singleInput.title + " - "+$("title").html();
 	if(singleInput.headImage==null)
 		document.getElementById("head-image").src = defaultHeadImage;
 	else
@@ -46,5 +46,7 @@ initalizeFirebase();
 
 //Loading and inserting blog data from Firebase
 //$.when(loadAndInsertBlogData("memo")).then(loadSingleBlog(BID));
-loadAndInsertBlogData("memo",loadSingleBlog);
+region = (window.localStorage.getItem("_region"))?window.localStorage.getItem("_region"):"zh";
+loadAndInsertBlogData("memo", loadSingleBlog, region);
+delete region;
 //loadSingleBlog(BID);

@@ -124,6 +124,13 @@
                 </form>
                 <form id="edit-form" style="display: none;">
                     <div class="form-group">
+                        <label for="Region">Region</label>
+                        <select class="form-control" id="region-select" onchange="changeRegion();">
+                            <option value="zh">Chinese</option>
+                            <option value="jp">Japanese</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
                         <label for="data-select">Load</label>
                         <select class="form-control" id="data-select">
                             <option value="">New</option>

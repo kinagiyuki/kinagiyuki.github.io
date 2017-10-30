@@ -4,6 +4,54 @@
 		"selected_items":
 		[
 			[
+				"conte",
+				"content-body"
+			],
+			[
+				"opt",
+				"option"
+			],
+			[
+				"op",
+				"option"
+			],
+			[
+				"add",
+				"addClass"
+			],
+			[
+				"tra",
+				"translateX()"
+			],
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"sele",
+				"selectedIndex"
+			],
+			[
+				"se",
+				"selectedIndex"
+			],
+			[
+				"re",
+				"region"
+			],
+			[
+				"blog",
+				"blog-date"
+			],
+			[
+				"head",
+				"head-image-input"
+			],
+			[
+				"for",
+				"form-control"
+			],
+			[
 				"img",
 				"img-responsive"
 			],
@@ -14,14 +62,6 @@
 			[
 				"over",
 				"overflow-y"
-			],
-			[
-				"tra",
-				"transition"
-			],
-			[
-				"mar",
-				"margin-top"
 			],
 			[
 				"text",
@@ -58,10 +98,6 @@
 			[
 				"on",
 				"onmousedown\tAttr"
-			],
-			[
-				"op",
-				"opacity"
 			],
 			[
 				"ta",
@@ -152,24 +188,12 @@
 				"saveBlog"
 			],
 			[
-				"opt",
-				"option\tTag"
-			],
-			[
-				"se",
-				"seletedID"
-			],
-			[
 				"bl",
 				"blogLoad"
 			],
 			[
 				"app",
 				"appendChild"
-			],
-			[
-				"blog",
-				"blogData"
 			],
 			[
 				"form",
@@ -212,10 +236,6 @@
 				"overflow-y"
 			],
 			[
-				"re",
-				"repeat-x"
-			],
-			[
 				"rgb",
 				"rgba()"
 			],
@@ -234,10 +254,6 @@
 			[
 				"a",
 				"auto"
-			],
-			[
-				"for",
-				"form-group"
 			],
 			[
 				"sk",
@@ -383,7 +399,7 @@
 			"file": "blog/js/common.js",
 			"settings":
 			{
-				"buffer_size": 7489,
+				"buffer_size": 7239,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -392,25 +408,16 @@
 			"file": "blog/css/common.css",
 			"settings":
 			{
-				"buffer_size": 10412,
+				"buffer_size": 10440,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "blog/blog.html",
-			"settings":
-			{
-				"buffer_size": 5363,
-				"encoding": "UTF-8",
-				"line_ending": "Unix"
 			}
 		},
 		{
 			"file": "/D/maimai_simulator/maidata.txt",
 			"settings":
 			{
-				"buffer_size": 1277,
+				"buffer_size": 3316,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -451,27 +458,38 @@
 		"/D/GitHub/kinagiyuki.github.io",
 		"/D/GitHub/kinagiyuki.github.io/blog",
 		"/D/GitHub/kinagiyuki.github.io/blog/css",
+		"/D/GitHub/kinagiyuki.github.io/blog/jp",
 		"/D/GitHub/kinagiyuki.github.io/blog/js",
 		"/D/GitHub/kinagiyuki.github.io/css"
 	],
 	"file_history":
 	[
+		"/D/GitHub/kinagiyuki.github.io/blog/js/editing.js",
+		"/D/GitHub/kinagiyuki.github.io/blog/blog_example.html",
+		"/D/GitHub/kinagiyuki.github.io/blog/jp/css/common_jp.css",
+		"/D/GitHub/kinagiyuki.github.io/blog/jp/index.html",
+		"/D/GitHub/kinagiyuki.github.io/blog/jp/blog.html",
+		"/D/GitHub/kinagiyuki.github.io/blog/jp/css/blog_js.css",
+		"/D/GitHub/kinagiyuki.github.io/blog/index.html",
+		"/C/Users/kinagiyuki/Downloads/NotoSansCJKtc-hinted/README",
+		"/D/game/TeachingFeeling-2.0.1/start.command",
+		"/D/game/TeachingFeeling-2.0.1/index.html",
+		"/D/game/TeachingFeeling-2.0.1/tyrano/libs.js",
+		"/D/game/TeachingFeeling-2.0.1/data/system/KeyConfig.js",
+		"/D/game/TeachingFeeling-2.0.1/package.json",
+		"/D/GitHub/kinagiyuki.github.io/blog/blog.html",
+		"/D/GitHub/kinagiyuki.github.io/blog/js/index.js",
+		"/D/GitHub/kinagiyuki.github.io/blog/js/blog.js",
+		"/D/GitHub/kinagiyuki.github.io/blog/editing.html",
+		"/D/GitHub/kinagiyuki.github.io/blog/css/common.css",
 		"/D/GitHub/kinagiyuki.github.io/index.html",
 		"/D/GitHub/kinagiyuki.github.io/css/homepage.css",
+		"/C/Users/kinagiyuki/mathFunction.py",
 		"/D/GitHub/kinagiyuki.github.io/js/homepage.js",
 		"/D/Program Files (x86)/GoldWave/readme.htm",
-		"/C/Users/kinagiyuki/mathFunction.py",
-		"/D/GitHub/kinagiyuki.github.io/blog/blog_example.html",
-		"/D/GitHub/kinagiyuki.github.io/blog/index.html",
-		"/D/GitHub/kinagiyuki.github.io/blog/blog.html",
-		"/D/GitHub/kinagiyuki.github.io/blog/js/blog.js",
 		"/C/Users/kinagiyuki/Documents/STAR WARS Battlefront II Multiplayer Beta/settings/BootOptions",
-		"/D/GitHub/kinagiyuki.github.io/blog/js/editing.js",
-		"/D/GitHub/kinagiyuki.github.io/blog/css/common.css",
 		"/C/Users/kinagiyuki/Documents/STAR WARS Battlefront II Multiplayer Beta/settings/ProfileOptions_profile_synced",
 		"/C/Users/kinagiyuki/Documents/STAR WARS Battlefront II Multiplayer Beta/settings/ProfileOptions_profile",
-		"/D/GitHub/kinagiyuki.github.io/blog/editing.html",
-		"/D/GitHub/kinagiyuki.github.io/blog/js/index.js",
 		"/D/GitHub/kinagiyuki.github.io/package.json",
 		"/D/GitHub/kinagiyuki.github.io/karma.conf.js",
 		"/C/Users/kinagiyuki/Documents/STAR WARS Battlefront II Multiplayer Beta/settings/ProfileOptions",
@@ -563,7 +581,7 @@
 	"groups":
 	[
 		{
-			"selected": 3,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -572,15 +590,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7489,
+						"buffer_size": 7239,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4813,
-								4813
+								7226,
+								7226
 							]
 						],
 						"settings":
@@ -590,7 +608,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1485.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
@@ -602,15 +620,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 10412,
+						"buffer_size": 10440,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								7280,
-								7280
+								5168,
+								5168
 							]
 						],
 						"settings":
@@ -619,7 +637,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 5445.0,
+						"translation.y": 3825.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
@@ -627,49 +645,19 @@
 				},
 				{
 					"buffer": 2,
-					"file": "blog/blog.html",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 5363,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1636,
-								1636
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 270.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
 					"file": "/D/maimai_simulator/maidata.txt",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1277,
+						"buffer_size": 3316,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1257,
-								1257
+								3292,
+								3292
 							]
 						],
 						"settings":
@@ -677,7 +665,7 @@
 							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 135.0,
+						"translation.y": 945.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,

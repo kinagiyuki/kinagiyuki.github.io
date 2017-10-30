@@ -10,11 +10,15 @@ tagData['[link]'] = "<a href=\"[url]\">[content]</a>";
 //tagData['[dl]'] = "<p class='dl'>▼△▼△▼△▼△▼△▼△▼△▼△▼△▼△▼△▼△</p>\n";
 tagData['[dl]'] = "<p class=\"dl\"><line></line></p>";
 
+if(window.location.href.indexOf("/jp/")>-1)
+  window.localStorage.setItem("_region","jp");
+else
+  window.localStorage.setItem("_region","zh");
 
 //======================Function declaration and definition==================
 function inputDate(x) {
-  var target = document.getElementById("content-body");
-  target.innerHTML = "<p class=\"date\">" + x + "</p>\n" + target.innerHTML;
+  var target = $("#content-body");
+  target.html("<p class=\"date\">" + x + "</p>\n" + target.html());
 }
 
 function inputContent(x,mode) {
@@ -82,10 +86,7 @@ function inputContent(x,mode) {
   //console.clear();
   //console.log(content);
   if(mode=='insert')
-  {
-    var target = document.getElementById("content-body");
-    target.innerHTML =  content;
-  }
+    $("#content-body").html(content);
   else if(mode=='tape-out')
   {
     copyTextToClipboard(content);
@@ -106,34 +107,28 @@ function getParameterByName(name)
 //Mobile navigate menu related function
 function switchMobileNav()
 {
-  var target = document.getElementById("mobile-nav-wrapper").style;
+  var target = $("#mobile-nav-wrapper")[0].style;
   if(target.transform!="translate(0px, 0px)")
   {
     target.transform = "translate(0,0)";
     target.boxShadow  = "0px 3px 3px rgba(86,36,36,0.5)";
     $(".mobile-nav")[0].style.opacity = 1;
-    if(document.getElementById("mobile-nav-icon").classList.contains("glyphicon-th"))
-    {
-      document.getElementById("mobile-nav-icon").classList.remove("glyphicon-th");
-      document.getElementById("mobile-nav-icon").classList.add("glyphicon-remove");
-    }
+    if($("#mobile-nav-icon").hasClass("glyphicon-th"))
+      $("#mobile-nav-icon").removeClass("glyphicon-th").addClass("glyphicon-remove");
 
     setTimeout(function(){
-      document.getElementById("mobile-nav-content").style.opacity = "1";
+      $("#mobile-nav-content").css("opacity","1");
     },250);
   }
   else
   {
-    document.getElementById("mobile-nav-content").style.opacity = "0";
+    $("mobile-nav-content").css("opacity","0");
     setTimeout(function(){
       target.transform = "translate(100%,-100%)";
       target.boxShadow  = "0 0 0 grey";
       $(".mobile-nav")[0].style.opacity = 0.5;
-      if(document.getElementById("mobile-nav-icon").classList.contains("glyphicon-remove"))
-      {
-        document.getElementById("mobile-nav-icon").classList.remove("glyphicon-remove");
-        document.getElementById("mobile-nav-icon").classList.add("glyphicon-th");
-      }
+      if($("#mobile-nav-icon").hasClass("glyphicon-remove"))
+        $("#mobile-nav-icon").removeClass("glyphicon-remove").addClass("glyphicon-th");
     },100);
   }
   //target.width = "100%";
@@ -175,9 +170,9 @@ function insertBlogData(mode)
   //console.log("Blog Data inserted");
 }
 
-function loadAndInsertBlogData(mode,after)
+function loadAndInsertBlogData(mode,after,region)
 {
-  firebase.database().ref('blogs/zh/').once('value').then(function(snapshot) {
+  firebase.database().ref('blogs/'+region+'/').once('value').then(function(snapshot) {
   //console.log(snapshot.val());
   var i=1;
   //blogData = new Array();

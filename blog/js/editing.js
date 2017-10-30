@@ -4,9 +4,7 @@ var seletedID = "";
 
 //=====================Functions definition=====================
 function inputTitle(x) {
-	var inputText = x.value;
-	var title = document.getElementById("content-heading");
-	title.innerHTML = inputText;
+  $("#content-heading").html(x.value);
 }
 
 function inputHeadImage(x) {
@@ -59,31 +57,29 @@ function copyTextToClipboard(text) {
   document.body.removeChild(textArea);
 }
 
-function insertBlogData() {
-  console.log("Inserting Blog data...");
-  var blogLoad = document.getElementById("data-select");
-  var init = document.createElement("option");
-  init.value = "";
-  init.innerHTML = "[New Blog]";
-  blogLoad.appendChild(init);
-  for(var i=1;i<=blogData.length;i++)
-  {
-    var opt = document.createElement("option");
-    opt.value = i;
-    opt.innerHTML = "#"+i+": "+blogData[i-1].title;
-    blogLoad.appendChild(opt);
-  }
+function insertBlogData(region) {
+  //console.log("Inserting Blog data...");
+  var blogLoad = $("#data-select");
+  var init = $("<option value=''>[New Blog]</option>");
+  blogLoad.append(init);
+  if(blogData[region])
+    for(var i=1;i<=blogData[region].length;i++)
+    {
+      var opt = $("<option></option>");
+      opt.val(i).html("#"+i+": "+blogData[region][i-1].title);
+      blogLoad.append(opt);
+    }
+  blogLoad.prop("selectedIndex",0);
 }
 
 function clearSelection() {
-  console.log("Clearing old data...");
-  var blogLoad = document.getElementById("data-select");
-  for(var i=0;i<blogLoad.options.length;i++)
-    blogLoad.remove(i);
+  //console.log("Clearing old data...");
+  $("#data-select").empty();
 }
 
 function load() {
   console.log("Loading...");
+  const region = (window.localStorage.getItem("_region"))?window.localStorage.getItem("_region"):"zh";
   var index = document.getElementById("data-select").selectedIndex;
   var blogLoad = document.getElementById("data-select")[index];
   if(blogLoad.value!="")
@@ -91,20 +87,20 @@ function load() {
     console.log("Not new");
     seletedID = blogLoad.value;
     var loadIndex = parseInt(seletedID)-1;
-    if(blogData[loadIndex].headImage==null||blogData[loadIndex].headImage=="")
+    if(blogData[region][loadIndex].headImage==null||blogData[region][loadIndex].headImage=="")
       document.getElementById("head-image").src = defaultHeadImage;
     else
     {
-      document.getElementById("head-image").src = blogData[loadIndex].headImage;
-      document.getElementById("head-image-input").value = blogData[loadIndex].headImage;
+      document.getElementById("head-image").src = blogData[region][loadIndex].headImage;
+      document.getElementById("head-image-input").value = blogData[region][loadIndex].headImage;
     }
-    document.getElementById("content-heading").innerHTML = blogData[loadIndex].title;
-    document.getElementById("title").value = blogData[loadIndex].title;
-    document.getElementById("blog-date").value = blogData[loadIndex].date;
-    inputContent(blogData[loadIndex].content,'insert');
-    inputDate(blogData[loadIndex].date);
-    document.getElementById("content-input").value = blogData[loadIndex].content;
-    document.getElementById("public").checked = (blogData[loadIndex].public=="Yes")?true:false;
+    document.getElementById("content-heading").innerHTML = blogData[region][loadIndex].title;
+    document.getElementById("title").value = blogData[region][loadIndex].title;
+    document.getElementById("blog-date").value = blogData[region][loadIndex].date;
+    inputContent(blogData[region][loadIndex].content,'insert');
+    inputDate(blogData[region][loadIndex].date);
+    document.getElementById("content-input").value = blogData[region][loadIndex].content;
+    document.getElementById("public").checked = (blogData[region][loadIndex].public=="Yes")?true:false;
   }
   else
   {
@@ -121,18 +117,19 @@ function load() {
 }
 
 function save() {
+  const region = (window.localStorage.getItem("_region"))?window.localStorage.getItem("_region"):"zh";
   var isNew = false;
-  var inputHeadImage = document.getElementById("head-image-input").value;
-  var inputTitle = document.getElementById("title").value;
-  var inputDate = document.getElementById("blog-date").value;
-  var intputContent = document.getElementById("content-input").value;
-  var isPublic = (document.getElementById("public").checked)?"Yes":"No";
-  if(seletedID == "" || seletedID > blogData.length)  //New blog content
+  var inputHeadImage = $("#head-image-input").val();
+  var inputTitle = $("#title").val();
+  var inputDate = $("#blog-date").val();
+  var intputContent = $("#content-input").val();
+  var isPublic = ($("#public").prop("checked"))?"Yes":"No";
+  if(seletedID == "" || seletedID > blogData[region].length)  //New blog content
   {
       console.log("New Blog");
-      firebase.database().ref('blogs/zh/' + (blogData.length+1) ).set({
+      firebase.database().ref('blogs/'+region+'/' + ((blogData[region])?(blogData[region].length+1):"1") ).set({
       title: inputTitle,
-      headImage:　"",
+      headImage:　inputHeadImage,
       date: inputDate,
       content: intputContent,
       public: isPublic
@@ -149,31 +146,49 @@ function save() {
       public: isPublic
     };
     var update = {};
-    update["blogs/zh/"+seletedID] = saveBlog;
+    update["blogs/"+region+"/"+seletedID] = saveBlog;
     var result = firebase.database().ref().update(update);
     console.log(result);
   }
 }
 
+function changeRegion()
+{
+  var selected = $("#region-select :selected").val();
+  window.localStorage.setItem("_region",selected);
+  clearSelection();
+  insertBlogData(selected);
+}
+
 //==================== Firebase related ==============================
 function logIn() {
-  var Email = document.getElementById("login-email").value;
-  var Password = document.getElementById("login-password").value;
+  const Email = $("#login-email").val();
+  const Password = $("#login-password").val();
+  const region = ["zh","jp"];
 
   firebase.auth().signInWithEmailAndPassword(Email, Password).then(function(user) {
 
-    firebase.database().ref('blogs/zh/').once('value').then(function(snapshot) {
-      var i=1;
+    firebase.database().ref('blogs/').once('value').then(function(snapshot) {
+      for(var i=0;i<region.length;i++)
+      {
+        var temp = snapshot.val()[region[i]];
+        if(!temp)
+          continue;
+        blogData[region[i]] = new Array();
+        var count = 1;
+        while(temp[count]!=null)
+          blogData[region[i]].push(temp[count++]);
+      }
+      /*var i=1;
       blogData = new Array();
-      console.log(snapshot.val());
       while(snapshot.val()[i]!=null)
-        blogData.push(snapshot.val()[i++]);
+        blogData.push(snapshot.val()[i++]);*/
       clearSelection();
-      insertBlogData();
+      insertBlogData("zh");
     });
 
-    document.getElementById("login-form").style.display = "none";
-    document.getElementById("edit-form").style.display = "block";
+    $("#login-form").css("display","none");
+    $("#edit-form").css("display","block");
 
   }).catch(function(error) {
     // Handle Errors here.
@@ -188,16 +203,23 @@ function logOut() {
 
   firebase.auth().signOut().then(function() {
     // Sign-out successful.
-    document.getElementById("login-email").value = "";
-    document.getElementById("login-password").value = "";
-    document.getElementById("edit-form").style.display = "none";
-    document.getElementById("login-form").style.display = "block";   
+    $("#login-email").val("");
+    $("#login-password").val("");
+    $("#edit-form").css("display","none");
+    $("#login-form").css("display","block");
   }, function(error) {
     // An error happened.
     alert("Something goes wrong");
   });
 
 }
+
+//Event Attach
+$("#login-password").keypress(function(e){
+  const key = e.which;
+  if(key==13)
+    $("#login").click();
+});
 
 //===================== End of function definition ============================
 
@@ -211,7 +233,7 @@ firebase.auth().onAuthStateChanged(function(user) {
       blogData = new Array();
       firebase.database().ref('blogs/zh/').once('value').then(function(snapshot) {
         var i=1;
-        console.log(snapshot.val());
+        //console.log(snapshot.val());
         while(snapshot.val()[i]!=null)
           blogData.push(snapshot.val()[i++]);
         clearSelection();

@@ -1,0 +1,13 @@
+.content-heading,
+.content-body,
+.content-end {
+	font-family:  seto, notoSansCJKtc;
+}
+
+.content-end {
+	height: 85px;
+}
+
+.nav-label > a {
+	left: 45%;
+}
