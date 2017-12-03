@@ -399,7 +399,7 @@
 			"file": "blog/js/common.js",
 			"settings":
 			{
-				"buffer_size": 7239,
+				"buffer_size": 7220,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -408,16 +408,25 @@
 			"file": "blog/css/common.css",
 			"settings":
 			{
-				"buffer_size": 10440,
+				"buffer_size": 10121,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "blog/index.html",
+			"settings":
+			{
+				"buffer_size": 5491,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
 			}
 		},
 		{
 			"file": "/D/maimai_simulator/maidata.txt",
 			"settings":
 			{
-				"buffer_size": 3316,
+				"buffer_size": 4100,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			}
@@ -458,12 +467,14 @@
 		"/D/GitHub/kinagiyuki.github.io",
 		"/D/GitHub/kinagiyuki.github.io/blog",
 		"/D/GitHub/kinagiyuki.github.io/blog/css",
-		"/D/GitHub/kinagiyuki.github.io/blog/jp",
-		"/D/GitHub/kinagiyuki.github.io/blog/js",
-		"/D/GitHub/kinagiyuki.github.io/css"
+		"/D/GitHub/kinagiyuki.github.io/css",
+		"/D/GitHub/kinagiyuki.github.io/js"
 	],
 	"file_history":
 	[
+		"/C/Users/kinagiyuki/Documents/STAR WARS Battlefront II/settings/BootOptions",
+		"/D/maimai_simulator/maidata.txt",
+		"/D/maimai_simulator/2simai_expand_231.swf",
 		"/D/GitHub/kinagiyuki.github.io/blog/js/editing.js",
 		"/D/GitHub/kinagiyuki.github.io/blog/blog_example.html",
 		"/D/GitHub/kinagiyuki.github.io/blog/jp/css/common_jp.css",
@@ -543,7 +554,7 @@
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 40.0
 	},
 	"find_in_files":
 	{
@@ -557,6 +568,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"mobile-nav-icon",
+			"kokuban",
+			"6",
 			"5",
 			"85",
 			"notice",
@@ -581,7 +595,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -590,15 +604,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7239,
+						"buffer_size": 7220,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								7226,
-								7226
+								4601,
+								4601
 							]
 						],
 						"settings":
@@ -608,10 +622,10 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1278.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -620,15 +634,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 10440,
+						"buffer_size": 10121,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								5168,
-								5168
+								7165,
+								7165
 							]
 						],
 						"settings":
@@ -637,27 +651,57 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 3825.0,
+						"translation.y": 5175.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "/D/maimai_simulator/maidata.txt",
-					"semi_transient": false,
+					"file": "blog/index.html",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 3316,
+						"buffer_size": 5491,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3292,
-								3292
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 450.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/D/maimai_simulator/maidata.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4100,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1582,
+								1582
 							]
 						],
 						"settings":
@@ -665,10 +709,10 @@
 							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 945.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 3,
 					"type": "text"
 				}
 			]

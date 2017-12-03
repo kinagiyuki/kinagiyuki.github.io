@@ -112,23 +112,24 @@ function switchMobileNav()
   {
     target.transform = "translate(0,0)";
     target.boxShadow  = "0px 3px 3px rgba(86,36,36,0.5)";
-    $(".mobile-nav")[0].style.opacity = 1;
-    if($("#mobile-nav-icon").hasClass("glyphicon-th"))
-      $("#mobile-nav-icon").removeClass("glyphicon-th").addClass("glyphicon-remove");
-
+    $(".mobile-nav").css("opacity","1").css("border-radius", "0px");
+    $("#mobile-nav-icon").removeClass("glyphicon-th").addClass("glyphicon-remove");
     setTimeout(function(){
       $("#mobile-nav-content").css("opacity","1");
     },250);
   }
   else
   {
-    $("mobile-nav-content").css("opacity","0");
+    $("#mobile-nav-content").css("opacity","0");
     setTimeout(function(){
-      target.transform = "translate(100%,-100%)";
+      //target.transform = "translate(100%,-100%)";
+      target.transform = "translate(0,-100%)";
       target.boxShadow  = "0 0 0 grey";
-      $(".mobile-nav")[0].style.opacity = 0.5;
-      if($("#mobile-nav-icon").hasClass("glyphicon-remove"))
-        $("#mobile-nav-icon").removeClass("glyphicon-remove").addClass("glyphicon-th");
+      $("#mobile-nav-icon").removeClass("glyphicon-remove").addClass("glyphicon-th");
+      setTimeout(function() {
+        $(".mobile-nav").css("opacity","0.5").css("border-radius", "25px");
+      },150);
+      
     },100);
   }
   //target.width = "100%";
@@ -160,11 +161,11 @@ function insertBlogData(mode)
     const content = "<p class='title-"+((i%2)?"A":"B")+"'><a href=\"blog.html?blog="+BID+"\">"+title+" - "+date+"</a></p>";
     const memoContent = "<p><a href=\"blog.html?blog="+BID+"\">"+title+"</a></p>";
     if(mode=="all" || mode=="menu")
-      document.getElementById("content-body").innerHTML += content;
+      $("#content-body")[0].innerHTML += content;
     if(mode=="all" || mode=="memo")
     {
-      document.getElementById("memo-inside").innerHTML += memoContent;
-      document.getElementById("mobile-recent-blog-content").innerHTML += memoContent;
+      $("#memo-inside")[0].innerHTML += memoContent;
+      $("#mobile-recent-blog-content")[0].innerHTML += memoContent;
     }
   }
   //console.log("Blog Data inserted");
